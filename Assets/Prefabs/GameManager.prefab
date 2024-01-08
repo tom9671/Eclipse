@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8916289203591955106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8916289203591955133}
+  - component: {fileID: 8916289203591955132}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8916289203591955133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8916289203591955106}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8916289203591955132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8916289203591955106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2ee5f55b8944c94d9742ff095db1f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sequence:
+  - {fileID: 5771201751170585323, guid: 7d438e049f524584193e0373152f8add, type: 3}
+  - {fileID: 5771201751170585323, guid: de3b4bb882de77b4f9b1d284f5979a41, type: 3}
+  - {fileID: 3538707176990875301, guid: fa0419efe113e974b800af44aaa59802, type: 3}
+  - {fileID: 2533609351610090292, guid: 16ce876fdcbea164fb118837eb5b7f83, type: 3}
+  - {fileID: 2311054990902660475, guid: 069a31f49f74b8249a1a8c8e8049c7e6, type: 3}
+  - {fileID: 2664831077181212010, guid: adf095cbd4cb0304abb84245cb6b4b0b, type: 3}
+  resolution: {x: 1920, y: 1080}
+  scannerObject: {fileID: 5112593745680712410, guid: dd331d00808f9224780ba2ebe2b28abf, type: 3}
+  storyMenu: {fileID: 1479890123852137617, guid: 2fee5a03c165b644e8d2ceadc1b6d9a1, type: 3}
+  totalTimeInSeconds: 1800
+  timer: {fileID: 9001314965870351832, guid: 82f5b180a4b37474a9db544e801dfe1d, type: 3}
+  timeUpPrompt: {fileID: 5862649312709334584, guid: c547881fd9758be44a7e59e5520bd10b, type: 3}
+  tryAgainPrompt: {fileID: 4596253473966703912, guid: 48e9eb60e30f5b749b56de7bf18ce162, type: 3}
+  resultScreen: {fileID: 6521017985947407148, guid: bdb5a3b195f25ee45a7c2754d6255055, type: 3}
+  videoPlayer: {fileID: 987560792132530327, guid: a4486336987e5db4ebf605e15277e8d3, type: 3}
+  audioPlayer: {fileID: 1542755695400946784, guid: b8f94b41876e96e44b9886789ec5033c, type: 3}

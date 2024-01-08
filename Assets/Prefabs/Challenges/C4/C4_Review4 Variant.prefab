@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2201874087678077036
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419417, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419420, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: m_Name
+      value: C4_Review4
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419421, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
+      value: These dots and dashes are often used in digital displays of words and
+        numbers
+      objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419421, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image
+      value: 
+      objectReference: {fileID: 21300000, guid: e3e234fe5a18946478845e9d24b33d30, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f7b8ae631f78cf546973560059705db1, type: 3}
