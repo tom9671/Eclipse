@@ -81,11 +81,13 @@ public class Canvas_Dialogue : MonoBehaviour
     Widget_VoiceOver audioPlayer;
 
     GameManager gm;
+    Animator anim;
     // Start is called before the first frame update
     public void Init(Canvas_Sequence _sequence)
     {
         sequence = _sequence;
         gm = GameManager.gm;
+        anim = GetComponent<Animator>();
 
         dialoguePos = new Vector3[2];
         dialogueSize = new Vector2[2];
@@ -353,7 +355,10 @@ public class Canvas_Dialogue : MonoBehaviour
     void EndDialogue()
     {
         onEndDialogue.Invoke();
-        Dissappear();
+        anim.SetTrigger("Exit");
+        if(sequence != null)
+            sequence.gameObject.SetActive(true);
+        Invoke("Dissappear", 1f);
     }
 
     public void EndVideo()

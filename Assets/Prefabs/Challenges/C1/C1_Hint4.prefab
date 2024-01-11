@@ -259,5 +259,6 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 847768916078445442, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}

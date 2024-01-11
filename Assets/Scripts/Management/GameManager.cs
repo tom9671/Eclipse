@@ -51,6 +51,7 @@ public class GameManager : MonoBehaviour
     {
         Canvas_Sequence newSequence = Instantiate(sequence[_challengeIdx], Vector3.zero, Quaternion.identity);
         newSequence.Init(_challengeIdx);
+        newSequence.gameObject.SetActive(false);
     }
 
     public void StartTimer()
