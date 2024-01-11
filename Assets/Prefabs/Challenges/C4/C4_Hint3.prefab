@@ -192,6 +192,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].dialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 835641127dfb8ed47a97f78f204b1e9a, type: 3}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage
       value: 
       objectReference: {fileID: 21300000, guid: 85b4d4226c642e642bec8c9e164f819e, type: 3}

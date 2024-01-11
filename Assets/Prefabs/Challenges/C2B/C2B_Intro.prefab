@@ -230,21 +230,41 @@ PrefabInstance:
         number you will be able to move on to Challenge 3.'
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].dialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c51c563c9ca8897449504cf449de33d3, type: 3}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage
       value: 
       objectReference: {fileID: 21300000, guid: 7229c05433c1aed43b121ff52ea23d69, type: 3}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[1].dialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e84e00008aad1d448ba0e6abffc19983, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].displayImage
       value: 
       objectReference: {fileID: 21300000, guid: 85b4d4226c642e642bec8c9e164f819e, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[2].dialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5b117746f3cc7d044823ed10fe268b0a, type: 3}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].displayImage
       value: 
       objectReference: {fileID: 21300000, guid: 85b4d4226c642e642bec8c9e164f819e, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[3].dialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 63a44334c13cf6b40aea2d70b63320c8, type: 3}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[3].displayImage
       value: 
       objectReference: {fileID: 21300000, guid: 85b4d4226c642e642bec8c9e164f819e, type: 3}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[4].dialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d1129695a8d943047aab7700d13d9d1d, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[4].displayImage
       value: 
@@ -369,8 +389,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[4].dialogue.Array.data[0].dialogue
-      value: When you think you have the monuments in the correct place click NEXT.  
-        Put these numbers in your tablet in the correct order from left to right.
+      value: Your job for the second part of this challenge is to place the monumnets
+        in the correct geographical location on the world map from left to right.
+        When you think you have the monuments in the correct place click NEXT. Put
+        these numbers in your tablet in the correct order from left to right.
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image

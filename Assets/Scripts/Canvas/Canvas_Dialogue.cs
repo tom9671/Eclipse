@@ -154,8 +154,10 @@ public class Canvas_Dialogue : MonoBehaviour
 
         if (dialogueSequence[messageIdx].dialogueClip != null)
         {
+            /*
             for (int i = 0; i < 2; i++)
                 displayText[i].enabled = false;
+            */
             if (audioPlayer == null)
             {
                 audioPlayer = Instantiate(gm.audioPlayer, audioHolder.position, audioHolder.rotation);
@@ -164,10 +166,11 @@ public class Canvas_Dialogue : MonoBehaviour
 
             audioPlayer.Init(dialogueSequence[messageIdx].dialogueClip, this);
         }
+        /*
         else
-        {
+        {*/
             for (int i = 0; i < 2; i++)
-                displayText[i].enabled = true;
+                displayText[i].enabled = (i < dialogueSequence[messageIdx].dialogue.Length && dialogueSequence[messageIdx].dialogue[i].dialogue != "");
             DisplayContent();
             for (int i = 0; i < 2; i++)
                 displayText[i].text = "";
@@ -175,7 +178,7 @@ public class Canvas_Dialogue : MonoBehaviour
             characterIdx = 0;
             messageSubIdx = 0;
             StartCoroutine(WriteText());
-        }
+        //}
     }
 
     IEnumerator WriteText()
@@ -343,7 +346,7 @@ public class Canvas_Dialogue : MonoBehaviour
                 displayText[i].text = dialogueSequence[messageIdx].dialogue[i].dialogue;
         }
         characterIdx = dialogueSequence[messageIdx].dialogue[messageSubIdx].dialogue.Length;
-        if (dialogueSequence[messageIdx].waitFor != eWaitFor.video)
+        if (dialogueSequence[messageIdx].waitFor == eWaitFor.text)
             EnableNext();
     }
 
@@ -356,6 +359,12 @@ public class Canvas_Dialogue : MonoBehaviour
     public void EndVideo()
     {
         if (dialogueSequence[messageIdx].waitFor == eWaitFor.video)
+            EnableNext();
+    }
+
+    public void EndAudio()
+    {
+        if (dialogueSequence[messageIdx].waitFor == eWaitFor.audio)
             EnableNext();
     }
 

@@ -113,8 +113,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_text
-      value: What is the distance the Earth is from the Moon during the April solar
-        eclipse?
+      value: What is the distance (in miles) the Earth is from the Moon during the
+        April solar eclipse?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108666592540738913, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_ContentType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108666592540738913, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_KeyboardType
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108666592540738913, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_CharacterLimit
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108666592540738913, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_CharacterValidation
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7439450908213169943, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: answerInput
@@ -182,7 +198,7 @@ PrefabInstance:
       objectReference: {fileID: 9127613446768646384, guid: ac466b09d32d88a40a100b5029d591ea, type: 3}
     - target: {fileID: 7439450908213169943, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: acceptableAnswers.Array.size
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7439450908213169943, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: acceptableAnswers.Array.data[0]
@@ -190,11 +206,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7439450908213169943, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: acceptableAnswers.Array.data[1]
-      value: 222979 miles
+      value: 222979
       objectReference: {fileID: 0}
     - target: {fileID: 7439450908213169943, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: acceptableAnswers.Array.data[2]
-      value: 222979 mi
+      value: 222979
       objectReference: {fileID: 0}
     - target: {fileID: 7439450908213169943, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: acceptableAnswers.Array.data[3]
@@ -223,6 +239,18 @@ PrefabInstance:
     - target: {fileID: 7439450908213169943, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: acceptableAnswers.Array.data[9]
       value: 222,979mi
+      objectReference: {fileID: 0}
+    - target: {fileID: 7912538843498801795, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_text
+      value: Enter Distance...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7912538843498801795, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_fontSize
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7912538843498801795, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}

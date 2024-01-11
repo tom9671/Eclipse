@@ -84,4 +84,9 @@ public class Canvas_Timer : MonoBehaviour
         else
             return (minutes + ":0" + seconds);
     }
+
+    public int GetTimeInSeconds()
+    {
+        return timeLimit - timeLeft;
+    }
 }

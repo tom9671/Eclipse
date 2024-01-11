@@ -25,6 +25,7 @@ public class Widget_VoiceOver : MonoBehaviour
 
         progressSlider.maxValue = _clip.length;
         progressSlider.value = 0;
+        progress = 0;
     }
 
     void FixedUpdate()
@@ -71,6 +72,6 @@ public class Widget_VoiceOver : MonoBehaviour
 
     void EndAudio()
     {
-        dialogue.StopWriting();
+        dialogue.EndAudio();
     }
 }

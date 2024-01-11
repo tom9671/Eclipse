@@ -279,15 +279,23 @@ PrefabInstance:
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogueClip
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: f5461288f12b7d747b72c6aab02cbe8c, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage
       value: 
       objectReference: {fileID: 21300000, guid: 851227680488ffa41b3d75b56f819ed3, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[1].dialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 16c94343b59ce0f46a918a3261650eef, type: 3}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].displayImage
       value: 
       objectReference: {fileID: 21300000, guid: b4e65d65d2896f24da92c7b51c926a5c, type: 3}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[2].dialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 11315e6c437235444bf5723f305503ab, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].displayImage
       value: 

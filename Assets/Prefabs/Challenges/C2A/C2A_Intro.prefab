@@ -230,17 +230,33 @@ PrefabInstance:
         each time you click on a HINT you will lose 15 seconds of time."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].dialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cd8a026d1b04a014cae7489e19626252, type: 3}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage
       value: 
       objectReference: {fileID: 21300000, guid: 7229c05433c1aed43b121ff52ea23d69, type: 3}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[1].dialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 34cddbb2b2d15fc40a20dacec2e9db13, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].displayImage
       value: 
       objectReference: {fileID: 21300000, guid: 85b4d4226c642e642bec8c9e164f819e, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[2].dialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 34cec3e9dfba49947940479430b39a4c, type: 3}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].displayImage
       value: 
       objectReference: {fileID: 21300000, guid: 85b4d4226c642e642bec8c9e164f819e, type: 3}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[3].dialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: afc19642cd9822d4cbb0e661419c2739, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[3].displayImage
       value: 

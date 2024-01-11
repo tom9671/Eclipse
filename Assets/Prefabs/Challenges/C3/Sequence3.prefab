@@ -225,7 +225,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7108666592540738913, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_CharacterLimit
-      value: 1
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7108666592540738913, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_OnSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
@@ -310,6 +310,10 @@ PrefabInstance:
     - target: {fileID: 7439450908213169943, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: acceptableAnswers.Array.data[0]
       value: luna
+      objectReference: {fileID: 0}
+    - target: {fileID: 7912538843498801795, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_text
+      value: Enter Code...
       objectReference: {fileID: 0}
     - target: {fileID: 8594047152187835119, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName

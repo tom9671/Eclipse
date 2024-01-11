@@ -108,6 +108,7 @@ public class Canvas_Sequence : MonoBehaviour
                 ShowDialogueSequence(hints[hintIdx]);
             }
             hintIdx++;
+            gm.UseHint(sequenceIdx);
         }
     }
 
@@ -159,6 +160,7 @@ public class Canvas_Sequence : MonoBehaviour
         ScannerCooldownText.gameObject.SetActive(true);
         scannerCooldown = 15;
         ShowDialogueSequence(gm.tryAgainPrompt);
+        gm.IncorrectAnswer(sequenceIdx);
     }
 
     public void ChangeSequence()

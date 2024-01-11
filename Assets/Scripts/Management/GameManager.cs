@@ -25,6 +25,11 @@ public class GameManager : MonoBehaviour
 
     public Widget_Video videoPlayer;
     public Widget_VoiceOver audioPlayer;
+
+    //Variables to track
+    int[] numbHintsUsed;
+    int[] incorrectAnswers;
+
     void Awake()
     {
         //Makes a GameManager singleton
@@ -37,6 +42,9 @@ public class GameManager : MonoBehaviour
         Screen.SetResolution((int)resolution.x, (int)resolution.y, false);
 
         mainCamera = FindObjectOfType<Camera>();
+
+        numbHintsUsed = new int[sequence.Length];
+        incorrectAnswers = new int[sequence.Length];
     }
 
     public void StartChallenge(int _challengeIdx)
@@ -94,5 +102,47 @@ public class GameManager : MonoBehaviour
     public void ResetGame()
     {
         SceneManager.LoadScene("Main");
+    }
+
+    public void UseHint(int _idx)
+    {
+        numbHintsUsed[_idx]++;
+    }
+
+    public void IncorrectAnswer(int _idx)
+    {
+        incorrectAnswers[_idx]++;
+    }
+
+    public int GetHintsUsed()
+    {
+        int hintsUsedTotal = 0;
+        for(int i = 0; i < numbHintsUsed.Length; i++)
+        {
+            hintsUsedTotal += numbHintsUsed[i];
+        }
+
+        return hintsUsedTotal;
+    }
+
+    public int GetIncorrectAnswers()
+    {
+        int incorrectAnswersTotal = 0;
+        for (int i = 0; i < incorrectAnswers.Length; i++)
+        {
+            incorrectAnswersTotal += incorrectAnswers[i];
+        }
+
+        return incorrectAnswersTotal;
+    }
+
+    public int GetTimeInSeconds()
+    {
+        return timer.GetTimeInSeconds();
+    }
+
+    public string GetTimeString()
+    {
+        return timer.GetTotalTime();
     }
 }
