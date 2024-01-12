@@ -39,6 +39,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3426232859316510814, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -215
+      objectReference: {fileID: 0}
     - target: {fileID: 4104275397158780229, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_text
       value: What was your time?
@@ -167,6 +171,10 @@ PrefabInstance:
       propertyPath: dialogueSequence.Array.data[0].limitSizeOf
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].dialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d63ee97aee213034e960e18a5cf52ba0, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage
       value: 

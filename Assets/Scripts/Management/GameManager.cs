@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     public Canvas_Sequence[] sequence = new Canvas_Sequence[4];
 
-    public Vector2 resolution = new Vector2(1920, 1080);
+    public Vector2 aspectRatio = new Vector2(4, 3);
 
     public QRCodeScanner scannerObject;
     public Canvas_Stories storyMenu;
@@ -38,8 +38,11 @@ public class GameManager : MonoBehaviour
         else if (gm != this)
             gm = this;
 
+        float maxHeight = Screen.resolutions[Screen.resolutions.Length - 1].height;
+        float maxWidth = (maxHeight / aspectRatio.x) * aspectRatio.y;
+
         //Set Resolution based off hierarchy specifications
-        Screen.SetResolution((int)resolution.x, (int)resolution.y, false);
+        Screen.SetResolution((int)maxHeight, (int)maxWidth, false);
 
         mainCamera = FindObjectOfType<Camera>();
 

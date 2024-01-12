@@ -16,16 +16,20 @@ public class Widget_VoiceOver : MonoBehaviour
 
     public void Init(AudioClip _clip, Canvas_Dialogue _dialogue)
     {
+        transform.localScale = Vector3.one;
+
         source = GetComponent<AudioSource>();
         source.clip = _clip;
+
+        source.time = 0;
+        progressSlider.maxValue = _clip.length;
+        progressSlider.value = 0;
+        progress = 0;
+
         source.Stop();
         source.Play();
 
         dialogue = _dialogue;
-
-        progressSlider.maxValue = _clip.length;
-        progressSlider.value = 0;
-        progress = 0;
     }
 
     void FixedUpdate()
@@ -66,6 +70,8 @@ public class Widget_VoiceOver : MonoBehaviour
     {
         float newTime = source.time + _difference;
         newTime = Mathf.Clamp(newTime, 0, source.clip.length - 0.1f);
+        if (newTime == source.clip.length)
+            EndAudio();
         progress = newTime;
         source.time = newTime;
     }
@@ -73,5 +79,10 @@ public class Widget_VoiceOver : MonoBehaviour
     void EndAudio()
     {
         dialogue.EndAudio();
+    }
+
+    public void StopAudio()
+    {
+        source.Stop();
     }
 }

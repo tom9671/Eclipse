@@ -354,8 +354,11 @@ public class Canvas_Dialogue : MonoBehaviour
 
     void EndDialogue()
     {
+        if (audioPlayer != null)
+            audioPlayer.StopAudio();
         onEndDialogue.Invoke();
-        anim.SetTrigger("Exit");
+        if(anim != null)
+            anim.SetTrigger("Exit");
         if(sequence != null)
             sequence.gameObject.SetActive(true);
         Invoke("Dissappear", 1f);

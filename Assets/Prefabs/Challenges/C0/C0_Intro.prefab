@@ -23,6 +23,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3426232859316510814, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5702960578402243714, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -145,7 +149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].waitFor
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].content
@@ -153,7 +157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].waitFor
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue
@@ -343,7 +347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579212335459, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579212335459, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_SizeDelta.x
@@ -363,7 +367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5978226324753335302, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5978226324753335302, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -371,7 +375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6046633722800589023, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7483753743294261379, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -405,7 +409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033699, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033699, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_AnchorMax.x
