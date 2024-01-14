@@ -12,6 +12,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1060920357884987792, guid: dbb60dbc8fe20194e925355f8daf05cf, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].dialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: afc19642cd9822d4cbb0e661419c2739, type: 3}
+    - target: {fileID: 1060920357884987792, guid: dbb60dbc8fe20194e925355f8daf05cf, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
       value: Once you find the correct QR code scan that code with your tablet
       objectReference: {fileID: 0}

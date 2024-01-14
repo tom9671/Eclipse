@@ -144,6 +144,10 @@ PrefabInstance:
         to frighten away a dragon instead of a squirrel.
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].dialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7477d945e9d5132408fb9891b87e16a3, type: 3}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage
       value: 
       objectReference: {fileID: -35734220, guid: 5865c8b2140f8294b9017f2e83837f4f, type: 3}

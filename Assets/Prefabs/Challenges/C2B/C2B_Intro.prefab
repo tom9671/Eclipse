@@ -378,7 +378,7 @@ PrefabInstance:
       propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[0].dialogue
       value: Another one of your monuments was built during the 12th century by the
         king of the Khmer Empire in Southeast Asia. This temple is called the Temple
-        of Angkor Wat
+        of Angkor Wat.
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[3].dialogue.Array.data[0].dialogue
@@ -389,7 +389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[4].dialogue.Array.data[0].dialogue
-      value: Your job for the second part of this challenge is to place the monumnets
+      value: Your job for the second part of this challenge is to place the monuments
         in the correct geographical location on the world map from left to right.
         When you think you have the monuments in the correct place click NEXT. Put
         these numbers in your tablet in the correct order from left to right.

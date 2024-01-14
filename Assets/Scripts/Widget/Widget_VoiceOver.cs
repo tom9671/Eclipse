@@ -14,6 +14,8 @@ public class Widget_VoiceOver : MonoBehaviour
 
     public Slider progressSlider;
 
+    public GameObject[] pauseGraphics = new GameObject[2];
+
     public void Init(AudioClip _clip, Canvas_Dialogue _dialogue)
     {
         transform.localScale = Vector3.one;
@@ -21,10 +23,12 @@ public class Widget_VoiceOver : MonoBehaviour
         source = GetComponent<AudioSource>();
         source.clip = _clip;
 
+        paused = false;
         source.time = 0;
         progressSlider.maxValue = _clip.length;
         progressSlider.value = 0;
         progress = 0;
+        UpdateGraphics();
 
         source.Stop();
         source.Play();
@@ -46,6 +50,7 @@ public class Widget_VoiceOver : MonoBehaviour
             {
                 paused = true;
                 EndAudio();
+                UpdateGraphics();
             }
         }
     }
@@ -64,6 +69,8 @@ public class Widget_VoiceOver : MonoBehaviour
             source.Pause();
         else
             source.Play();
+
+        UpdateGraphics();
     }
 
     public void SkipRewind(int _difference)
@@ -84,5 +91,11 @@ public class Widget_VoiceOver : MonoBehaviour
     public void StopAudio()
     {
         source.Stop();
+    }
+
+    void UpdateGraphics()
+    {
+        pauseGraphics[0].SetActive(!paused);
+        pauseGraphics[1].SetActive(paused);
     }
 }

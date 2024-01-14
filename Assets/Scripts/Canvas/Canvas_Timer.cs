@@ -16,6 +16,8 @@ public class Canvas_Timer : MonoBehaviour
     {
         gm = GameManager.gm;
 
+        timerText.text = (_timeLimit / 60) + ":00";
+
         timeLimit = _timeLimit;
         timeLeft = timeLimit;
         StartCoroutine("PassSecond");

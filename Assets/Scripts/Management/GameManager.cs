@@ -16,11 +16,12 @@ public class GameManager : MonoBehaviour
 
     public QRCodeScanner scannerObject;
     public Canvas_Stories storyMenu;
-    public int totalTimeInSeconds = 1800;
+    public int totalTimeInMinutes = 30;
     public Canvas_Timer timer;
     Canvas_Timer timerReal;
     public Canvas_TimeUp timeUpPrompt;
     public Canvas_Dialogue tryAgainPrompt;
+    public Canvas_Dialogue nullInputPrompt;
     public Canvas_Dialogue resultScreen;
 
     public Widget_Video videoPlayer;
@@ -48,6 +49,14 @@ public class GameManager : MonoBehaviour
 
         numbHintsUsed = new int[sequence.Length];
         incorrectAnswers = new int[sequence.Length];
+
+        if(PlayerPrefs.GetInt("FirstTime") == 0)
+        {
+            PlayerPrefs.SetInt("TotalTimeMinutes", 30);
+            PlayerPrefs.SetInt("FirstTime", 1);
+        }
+
+        totalTimeInMinutes = PlayerPrefs.GetInt("TotalTimeMinutes");
     }
 
     public void StartChallenge(int _challengeIdx)
@@ -62,7 +71,7 @@ public class GameManager : MonoBehaviour
         if(timerReal == null)
         {
             timerReal = Instantiate(timer, Vector3.zero, Quaternion.identity);
-            timerReal.Init(totalTimeInSeconds);
+            timerReal.Init(totalTimeInMinutes * 60);
         }
     }
 

@@ -8,6 +8,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1060920357884987792, guid: dbb60dbc8fe20194e925355f8daf05cf, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].dialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e84e00008aad1d448ba0e6abffc19983, type: 3}
+    - target: {fileID: 1060920357884987792, guid: dbb60dbc8fe20194e925355f8daf05cf, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
       value: One of these monuments is a replica of The Temple of the Sun in Machu
         Picchu, Peru. This ancient temple, built by the Incas, has a curved wall

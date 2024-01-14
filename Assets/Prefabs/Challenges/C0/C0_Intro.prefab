@@ -138,18 +138,18 @@ PrefabInstance:
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].video
       value: 
-      objectReference: {fileID: 32900000, guid: c20d01994da3dce439f316710a558271, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].video
       value: 
-      objectReference: {fileID: 32900000, guid: c20d01994da3dce439f316710a558271, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].content
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].waitFor
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].content
@@ -157,7 +157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].waitFor
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue
@@ -323,11 +323,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue.Array.data[0].dialogue
-      value: "Astrophysicist at the Institute for Advanced Study.  I am a member
-        of the Event Horizon Telescope Collaboration and my field of research is
-        using mathematical equations to create crisper images of black holes. I have
-        spent time at the Steward Observatory at the University of Arizona and the
-        Black Hole Initiative at Harvard.\u201D"
+      value: Astrophysicist at the Institute for Advanced Study.  I am a member of
+        the Event Horizon Telescope Collaboration and my field of research is using
+        mathematical equations to create crisper images of black holes. I have spent
+        time at the Steward Observatory at the University of Arizona and the Black
+        Hole Initiative at Harvard.
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image

@@ -93,8 +93,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 619892094756419420, guid: f7b8ae631f78cf546973560059705db1, type: 3}
       propertyPath: m_Name
-      value: C4_Review2
+      value: C4_Review2 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419421, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].dialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 222a4a3d838c9854a89790a99f220314, type: 3}
     - target: {fileID: 619892094756419421, guid: f7b8ae631f78cf546973560059705db1, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
       value: How do astronomers and astrophysicists map when and where they occur?

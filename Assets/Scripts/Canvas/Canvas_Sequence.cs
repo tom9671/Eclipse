@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Linq;
 
 public enum eDialogueInstance { introduction, replay, conclusion}
 
@@ -104,7 +105,7 @@ public class Canvas_Sequence : MonoBehaviour
 
             if (hints[hintIdx] != null)
             {
-                gm.ChangeTime(-15);
+                gm.ChangeTime(-5);
                 ShowDialogueSequence(hints[hintIdx]);
             }
             hintIdx++;
@@ -125,25 +126,32 @@ public class Canvas_Sequence : MonoBehaviour
 
     public void SubmitAnswer()
     {
-        if(acceptableAnswers.Length > 0)
+        string answer = answerInput.text.ToLower();
+
+        if (string.Concat(answer.Where(c => !char.IsWhiteSpace(c))) == "")
         {
-            string answer = answerInput.text.ToLower();
-
-            bool correct = false;
-            for (int i = 0; i < acceptableAnswers.Length; i++)
-            {
-                if (answer.Contains(acceptableAnswers[i]))
-                    correct = true;
-            }
-
-            if (correct)
-                Success();
-            else
-                Failure();
+            EmptyInput();
         }
         else
         {
-            Success();
+            if (acceptableAnswers.Length > 0)
+            {
+                bool correct = false;
+                for (int i = 0; i < acceptableAnswers.Length; i++)
+                {
+                    if (answer.Contains(acceptableAnswers[i]))
+                        correct = true;
+                }
+
+                if (correct)
+                    Success();
+                else
+                    Failure();
+            }
+            else
+            {
+                Success();
+            }
         }
     }
 
@@ -158,8 +166,14 @@ public class Canvas_Sequence : MonoBehaviour
     public void Failure()
     {
         ScannerCooldownText.gameObject.SetActive(true);
-        scannerCooldown = 15;
+        scannerCooldown = 5.5f;
         ShowDialogueSequence(gm.tryAgainPrompt);
+        gm.IncorrectAnswer(sequenceIdx);
+    }
+
+    void EmptyInput()
+    {
+        ShowDialogueSequence(gm.nullInputPrompt);
         gm.IncorrectAnswer(sequenceIdx);
     }
 

@@ -93,8 +93,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 619892094756419420, guid: f7b8ae631f78cf546973560059705db1, type: 3}
       propertyPath: m_Name
-      value: C4_Review3
+      value: C4_Review3 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 619892094756419421, guid: f7b8ae631f78cf546973560059705db1, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].dialogueClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f5fcf04bed20fc747858fb1f0fdbf4aa, type: 3}
     - target: {fileID: 619892094756419421, guid: f7b8ae631f78cf546973560059705db1, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
       value: Pieces of each color-coded eclipse path can be found on the transparency

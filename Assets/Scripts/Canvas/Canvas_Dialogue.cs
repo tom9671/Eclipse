@@ -87,7 +87,7 @@ public class Canvas_Dialogue : MonoBehaviour
     {
         sequence = _sequence;
         gm = GameManager.gm;
-        anim = GetComponent<Animator>();
+        //anim = GetComponent<Animator>();
 
         dialoguePos = new Vector3[2];
         dialogueSize = new Vector2[2];
@@ -357,11 +357,15 @@ public class Canvas_Dialogue : MonoBehaviour
         if (audioPlayer != null)
             audioPlayer.StopAudio();
         onEndDialogue.Invoke();
-        if(anim != null)
-            anim.SetTrigger("Exit");
-        if(sequence != null)
+        if (sequence != null)
             sequence.gameObject.SetActive(true);
-        Invoke("Dissappear", 1f);
+        if (anim != null)
+        {
+            anim.SetTrigger("Exit");
+            Invoke("Dissappear", 1f);
+        }
+        else
+            Dissappear();
     }
 
     public void EndVideo()

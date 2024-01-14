@@ -353,8 +353,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue.Array.data[1].dialogue
-      value: One theory is that Stonehenge was built by ancient astronomers and the
-        giant pillars were used to predict both solar and lunar eclipses.
+      value: "The sun\u2019s rays shine through the Heelstones and illuminate the
+        center altar stone located in the middle of the monument."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[1].dialogue
