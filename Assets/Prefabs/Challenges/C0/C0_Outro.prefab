@@ -23,6 +23,10 @@ PrefabInstance:
       propertyPath: m_text
       value: What are we doing?
       objectReference: {fileID: 0}
+    - target: {fileID: 5702960578402243714, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033699, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -168,6 +172,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 235ff59a2efd5244ebcec57f39739b54, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].dimensionLimit
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[1].dimensionLimit
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -214,11 +226,11 @@ PrefabInstance:
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image
       value: 
-      objectReference: {fileID: 21300000, guid: 235ff59a2efd5244ebcec57f39739b54, type: 3}
+      objectReference: {fileID: 21300000, guid: de8a1f0cd38d84842b7d1fbe99465503, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].displayImage.Array.data[0].image
       value: 
-      objectReference: {fileID: 21300000, guid: 7229c05433c1aed43b121ff52ea23d69, type: 3}
+      objectReference: {fileID: 21300000, guid: 8e08d9b5cd0d35e4f913345144fec1af, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: onEndDialogue.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -274,6 +286,10 @@ PrefabInstance:
     - target: {fileID: 7483753743294261379, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 271.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9099609501880145384, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}

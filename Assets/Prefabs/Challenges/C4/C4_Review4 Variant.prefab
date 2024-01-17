@@ -107,6 +107,6 @@ PrefabInstance:
     - target: {fileID: 619892094756419421, guid: f7b8ae631f78cf546973560059705db1, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image
       value: 
-      objectReference: {fileID: 21300000, guid: e3e234fe5a18946478845e9d24b33d30, type: 3}
+      objectReference: {fileID: 21300000, guid: 0138961eaf58fa34aa8cbb26777a199b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7b8ae631f78cf546973560059705db1, type: 3}

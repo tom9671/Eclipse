@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1132561457013679113, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ae8b64086b4da9641b49686528942a3d, type: 3}
     - target: {fileID: 1627084710919240526, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -299,6 +303,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8119751955396771395, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7998d00c65063b74992e10e681577f05, type: 3}
+    - target: {fileID: 8348356533090800183, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a17a9d0f9f9f656419ff449cd2149bf7, type: 3}
     - target: {fileID: 8812151382343072636, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_IsActive
       value: 1

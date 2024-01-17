@@ -422,23 +422,23 @@ PrefabInstance:
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image
       value: 
-      objectReference: {fileID: 21300000, guid: d97ebc18b36ac5a49a2c8523d804faad, type: 3}
+      objectReference: {fileID: 21300000, guid: 5155b6b39f29d2143861cfb18734b405, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].displayImage.Array.data[0].image
       value: 
-      objectReference: {fileID: 21300000, guid: 804e224564e2db0449173aea5bffa914, type: 3}
+      objectReference: {fileID: 21300000, guid: 1be1943579d9a6d4eb59166245a29d91, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].displayImage.Array.data[1].image
       value: 
-      objectReference: {fileID: 21300000, guid: 9717bd1a6c5a37b42b565c7c8df48743, type: 3}
+      objectReference: {fileID: 21300000, guid: 723b631233919524db4e9d44ffe20237, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].displayImage.Array.data[0].image
       value: 
-      objectReference: {fileID: 21300000, guid: 33acd38fa889eec47b3caa9fb8f199a9, type: 3}
+      objectReference: {fileID: 21300000, guid: e339b597e40b86e41a43a3e01a955a2b, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].displayImage.Array.data[1].image
       value: 
-      objectReference: {fileID: 21300000, guid: ca7234c6c1ff3ff43a6c456cd3f64ae3, type: 3}
+      objectReference: {fileID: 21300000, guid: 7b21cacc086501e4a963072f508f5ada, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].displayImage.Array.data[0].yOffset
       value: 50
@@ -457,7 +457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue.Array.data[1].alignContent
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[0].alignContent
