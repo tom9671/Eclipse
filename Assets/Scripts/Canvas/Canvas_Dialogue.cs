@@ -24,7 +24,7 @@ public class DialogueParams
 {
     public string dialogue;
     public eAlignment alignContent;
-    public eAlignment textJustification
+    public eAlignment textJustification;
 }
 
 [System.Serializable]
