@@ -196,6 +196,10 @@ PrefabInstance:
         Moon\u2019s shadow the \u2018path of totality\u2019."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].subtitle
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue
       value: The third one
       objectReference: {fileID: 0}
@@ -233,14 +237,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: Once you find the correct location to place your Moon, look at the numbers
-        on the table edge. These numbers represent the distance the Earth is from
-        the Moon during the April solar eclipse.
+      value: "Only people that live in the path of the Moon\u2019s shadow and are
+        on the sunny side of the Earth will be able to see the eclipse. We call the
+        path of the Moon\u2019s shadow the \u2018path of totality\u2019."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image
       value: 
-      objectReference: {fileID: 21300000, guid: d0bc7edbb1c1cf34d9bb890b88be848f, type: 3}
+      objectReference: {fileID: 21300000, guid: 723b631233919524db4e9d44ffe20237, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].yOffset
       value: 30
