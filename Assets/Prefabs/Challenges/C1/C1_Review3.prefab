@@ -198,6 +198,10 @@ PrefabInstance:
         Moon blocks the light from the Sun and creates a large shadow on Earth.
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].subtitle
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue
       value: The third one
       objectReference: {fileID: 0}
@@ -235,11 +239,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: Your challenge is to align the moon so the shadow it casts falls completely
-        within the path of totality running through Central Texas. You can move the
-        Moon right and left, up and down and back and forth in order to find the
-        right location. The edges of the Moon need to fit entirely within the path
-        of totality.
+      value: For the first challenge we need to understand what shadows are and how
+        the Sun, Moon, and Earth align to create shadows and eclipses.  During a
+        solar eclipse, the Moon, the Earth, and the Sun are all in alignment.  The
+        Moon blocks the light from the Sun and creates a large shadow on Earth.
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image

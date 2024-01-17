@@ -11,6 +11,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a1f3a87c9cc11014f9f845408264f0de, type: 3}
+    - target: {fileID: 1627084710919240526, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627084710919240526, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627084710919240526, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627084710919240526, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2798743005751947031, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -153,7 +169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4972373184970778309, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -159
+      value: -40
       objectReference: {fileID: 0}
     - target: {fileID: 4980588480406393040, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_Sprite
@@ -178,7 +194,11 @@ PrefabInstance:
     - target: {fileID: 5437806826836259847, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a8c7c93f0742e8e48b578042c59094e5, type: 3}
+      objectReference: {fileID: 21300000, guid: 80be1859aa9379a46af5d3c42d9fb45a, type: 3}
+    - target: {fileID: 5967357808305184725, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -140
+      objectReference: {fileID: 0}
     - target: {fileID: 5998514424984209500, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -201,12 +221,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6550205812926760475, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -69.8
+      value: -97
       objectReference: {fileID: 0}
     - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_text
       value: What is the distance (in miles) the Earth is from the Moon during the
         April solar eclipse?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_fontSize
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_margin.x
+      value: -69.72238
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_margin.z
+      value: -47.588287
       objectReference: {fileID: 0}
     - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_fontColor.b
@@ -219,6 +251,10 @@ PrefabInstance:
     - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_fontColor.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_fontColor32.rgba
@@ -254,7 +290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7439450908213169943, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: review.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7439450908213169943, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: dialogue.Array.size
@@ -368,6 +404,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: d18e10f4a0d61ac49b88c38d0f1e472a, type: 3}
+    - target: {fileID: 8348356533090800183, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a8c7c93f0742e8e48b578042c59094e5, type: 3}
+    - target: {fileID: 8355609550493373046, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_fontSize
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8355609550493373046, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_fontColor.b
       value: 1
@@ -381,8 +425,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8355609550493373046, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355609550493373046, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8812151382343072636, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
