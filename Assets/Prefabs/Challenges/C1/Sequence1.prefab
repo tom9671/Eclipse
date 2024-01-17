@@ -31,6 +31,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3713939084897976312, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713939084897976312, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713939084897976312, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713939084897976312, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3795255823875466322, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -192,6 +208,22 @@ PrefabInstance:
       value: What is the distance (in miles) the Earth is from the Moon during the
         April solar eclipse?
       objectReference: {fileID: 0}
+    - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7108666592540738913, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_ContentType
       value: 2
@@ -336,6 +368,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: d18e10f4a0d61ac49b88c38d0f1e472a, type: 3}
+    - target: {fileID: 8355609550493373046, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355609550493373046, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355609550493373046, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355609550493373046, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
 --- !u!114 &6164969252973549725 stripped
