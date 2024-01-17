@@ -34,7 +34,7 @@ public class BackgroundManager : MonoBehaviour
         imgCurrentContent1 = goConentImage1.GetComponent<Image>();
         //imgCurrentImage.sprite = sprBackgroundImageGeneral;
 
-        if (imgCurrentContent1.name = )
+        /* if (imgCurrentContent1.name = )
         {
             imgCurrentBack.sprite = sprBackgroundImageInfo;
             intCurrentSlide++;
@@ -42,7 +42,7 @@ public class BackgroundManager : MonoBehaviour
         else
         {
             imgCurrentBack.sprite = sprBackgroundImageGeneral;
-        }
+        } */
     }
 
     public void ChangeBackgroundPopUp()
