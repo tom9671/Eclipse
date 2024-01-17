@@ -51,14 +51,15 @@ public class Canvas_Dialogue : MonoBehaviour
     [Tooltip("Reference to the text object used to display the message")]
     public TMP_Text subtitleText;
     public TMP_Text[] displayText;
+    float[] textAlpha;
     public Image[] displayImageUI;
 
     public Transform audioHolder;
     public Transform videoHolder;
 
     [Range(1, 10)]
-    [Tooltip("The speed at which characters appear in the output, expressed as '(1.1 - (x/10)) / 16'")]
-    public float textSpeed = 5;
+    [Tooltip("The speed at which text alpha increases to become visible")]
+    public float textSpeed = 2;
 
     public Button nextButton;
     Vector3 nextPos;
@@ -97,9 +98,15 @@ public class Canvas_Dialogue : MonoBehaviour
             dialoguePos[i] = displayText[i].transform.localPosition;
             dialogueSize[i] = displayText[i].GetComponent<RectTransform>().sizeDelta;
         }
+        textAlpha = new float[displayText.Length];
 
         UpdateWithPlayerNames();
         StartWriting();
+    }
+
+    void FixedUpdate()
+    {
+        UpdateTextColor();
     }
 
     void UpdateWithPlayerNames()
@@ -150,16 +157,18 @@ public class Canvas_Dialogue : MonoBehaviour
 
     void StartWriting()
     {
+        textAlpha = new float[displayText.Length];
+        for (int i = 0; i < textAlpha.Length; i++)
+            textAlpha[i] -= 0.25f * (i + 1);
+
+        UpdateTextColor();
+
         subtitleText.text = dialogueSequence[messageIdx].subtitle;
         if (dialogueSequence[messageIdx].waitFor != eWaitFor.none)
             nextButton.gameObject.SetActive(false);
 
         if (dialogueSequence[messageIdx].dialogueClip != null)
         {
-            /*
-            for (int i = 0; i < 2; i++)
-                displayText[i].enabled = false;
-            */
             if (audioPlayer == null)
             {
                 audioPlayer = Instantiate(gm.audioPlayer, audioHolder.position, audioHolder.rotation);
@@ -168,21 +177,36 @@ public class Canvas_Dialogue : MonoBehaviour
 
             audioPlayer.Init(dialogueSequence[messageIdx].dialogueClip, this);
         }
-        /*
-        else
-        {*/
-            for (int i = 0; i < 2; i++)
-                displayText[i].enabled = (i < dialogueSequence[messageIdx].dialogue.Length && dialogueSequence[messageIdx].dialogue[i].dialogue != "");
-            DisplayContent();
-            for (int i = 0; i < 2; i++)
+
+        for (int i = 0; i < 2; i++)
+            displayText[i].enabled = (i < dialogueSequence[messageIdx].dialogue.Length && dialogueSequence[messageIdx].dialogue[i].dialogue != "");
+        DisplayContent();
+        for (int i = 0; i < 2; i++)
+        {
+            if (i < dialogueSequence[messageIdx].dialogue.Length)
+                displayText[i].text = dialogueSequence[messageIdx].dialogue[i].dialogue;
+            else
                 displayText[i].text = "";
-            writing = true;
-            characterIdx = 0;
-            messageSubIdx = 0;
-            StartCoroutine(WriteText());
-        //}
+        }
+
+        StopWriting();
     }
 
+    void UpdateTextColor()
+    {
+        for (int i = 0; i < textAlpha.Length; i++)
+        {
+            if (textAlpha[i] < 1)
+            {
+                textAlpha[i] += textSpeed * Time.deltaTime;
+                Color textColor = displayText[i].color;
+                textColor.a = Mathf.Clamp(textAlpha[i], 0, 1);
+                displayText[i].color = textColor;
+            }
+        }
+    }
+
+    /*
     IEnumerator WriteText()
     {
         float interval = (1.1f - (textSpeed / 10)) / 16;
@@ -218,6 +242,7 @@ public class Canvas_Dialogue : MonoBehaviour
             StartCoroutine(WriteText());
         }
     }
+    */
 
     public void Continue()
     {
@@ -341,13 +366,16 @@ public class Canvas_Dialogue : MonoBehaviour
 
     public void StopWriting()
     {
-        writing = false;
-        for (int i = 0; i < 2; i++)
-        {
-            if(i < dialogueSequence[messageIdx].dialogue.Length)
-                displayText[i].text = dialogueSequence[messageIdx].dialogue[i].dialogue;
-        }
+        /*
+writing = false;
+for (int i = 0; i < 2; i++)
+{
+    if(i < dialogueSequence[messageIdx].dialogue.Length)
+        displayText[i].text = dialogueSequence[messageIdx].dialogue[i].dialogue;
+}
+
         characterIdx = dialogueSequence[messageIdx].dialogue[messageSubIdx].dialogue.Length;
+        */
         if (dialogueSequence[messageIdx].waitFor == eWaitFor.text)
             EnableNext();
     }
