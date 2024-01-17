@@ -166,6 +166,10 @@ public class Canvas_Dialogue : MonoBehaviour
         subtitleText.text = dialogueSequence[messageIdx].subtitle;
         if (dialogueSequence[messageIdx].waitFor != eWaitFor.none)
             nextButton.gameObject.SetActive(false);
+        else
+        {
+            EnableNext();
+        }
 
         if (dialogueSequence[messageIdx].dialogueClip != null)
         {
