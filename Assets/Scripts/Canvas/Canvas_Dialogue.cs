@@ -24,7 +24,7 @@ public class DialogueParams
 {
     public string dialogue;
     public eAlignment alignContent;
-    public eAlignment textJustification;
+    public eAlignment justifyText = eAlignment.left;
 }
 
 [System.Serializable]
@@ -277,9 +277,9 @@ public class Canvas_Dialogue : MonoBehaviour
             displayText[i].GetComponent<RectTransform>().sizeDelta = dialogueSize[i];
             if (i < dialogueSequence[messageIdx].dialogue.Length)
             {
-                if (dialogueSequence[messageIdx].dialogue[i].textJustification == eAlignment.left)
+                if (dialogueSequence[messageIdx].dialogue[i].justifyText == eAlignment.left)
                     displayText[i].horizontalAlignment = HorizontalAlignmentOptions.Left;
-                else if (dialogueSequence[messageIdx].dialogue[i].textJustification == eAlignment.center)
+                else if (dialogueSequence[messageIdx].dialogue[i].justifyText == eAlignment.center)
                     displayText[i].horizontalAlignment = HorizontalAlignmentOptions.Center;
                 else
                     displayText[i].horizontalAlignment = HorizontalAlignmentOptions.Right;
