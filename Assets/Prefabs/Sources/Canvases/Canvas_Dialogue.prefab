@@ -286,8 +286,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Title Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fde21264b06064d43924d9b205c76b26, type: 2}
+  m_sharedMaterial: {fileID: -7461106026860385473, guid: fde21264b06064d43924d9b205c76b26, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -421,7 +421,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 270, y: 53}
+  m_AnchoredPosition: {x: 299, y: 53}
   m_SizeDelta: {x: 200, y: 159}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5988746355242973384
@@ -506,18 +506,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2330976674007969543}
-        m_TargetAssemblyTypeName: BackgroundManager, Assembly-CSharp
-        m_MethodName: ChangeBackgroundNext
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 5702960579134033703}
         m_TargetAssemblyTypeName: Canvas_Dialogue, Assembly-CSharp
         m_MethodName: Continue
@@ -1638,7 +1626,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e79e70d74b79b3540a62aec47759a120, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 933cb6c94987de640bb6cc1ec200fd6c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1669,3 +1657,4 @@ MonoBehaviour:
   sprBackgroundImagePopup: {fileID: 21300000, guid: 3e4a2964226a22d42b9e37eba5342b22, type: 3}
   sprBackgroundImageStart: {fileID: 21300000, guid: b3dfb820510ce054abb177082f75dfce, type: 3}
   goBackground: {fileID: 8108309390184056289}
+  goConentImage1: {fileID: 0}
