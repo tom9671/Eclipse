@@ -24,6 +24,7 @@ public class DialogueParams
 {
     public string dialogue;
     public eAlignment alignContent;
+    public eAlignment textJustification
 }
 
 [System.Serializable]
@@ -276,13 +277,10 @@ public class Canvas_Dialogue : MonoBehaviour
             displayText[i].GetComponent<RectTransform>().sizeDelta = dialogueSize[i];
             if (i < dialogueSequence[messageIdx].dialogue.Length)
             {
-                if (dialogueSequence[messageIdx].dialogue[i].alignContent == eAlignment.left)
+                if (dialogueSequence[messageIdx].dialogue[i].textJustification == eAlignment.left)
                     displayText[i].horizontalAlignment = HorizontalAlignmentOptions.Left;
-                else if (dialogueSequence[messageIdx].dialogue[i].alignContent == eAlignment.center)
-                {
+                else if (dialogueSequence[messageIdx].dialogue[i].textJustification == eAlignment.center)
                     displayText[i].horizontalAlignment = HorizontalAlignmentOptions.Center;
-                    displayText[i].GetComponent<RectTransform>().sizeDelta = new Vector2(dialogueSize[i].x * 2, dialogueSize[i].y);
-                }
                 else
                     displayText[i].horizontalAlignment = HorizontalAlignmentOptions.Right;
             }
@@ -343,6 +341,7 @@ public class Canvas_Dialogue : MonoBehaviour
                         break;
                     case eAlignment.center:
                         displayImageUI[i].transform.localPosition = new Vector2(-graphicPos.x, 0) + Vector2.up * dialogueSequence[messageIdx].displayImage[i].yOffset;
+                        displayText[i].GetComponent<RectTransform>().sizeDelta = new Vector2(dialogueSize[i].x * 2, dialogueSize[i].y);
                         break;
                 }
             }
