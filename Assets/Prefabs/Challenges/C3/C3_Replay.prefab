@@ -7,9 +7,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 271760471833200062, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_fontSize
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 271760471833200062, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_margin.w
+      value: -172.77487
+      objectReference: {fileID: 0}
+    - target: {fileID: 271760471833200062, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_margin.z
+      value: -306.28287
+      objectReference: {fileID: 0}
+    - target: {fileID: 271760471833200062, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 1083710202397392237, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_text
-      value: Stories Challenge
+      value: CELESTIAL TALES
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633369386193466479, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -124
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633369386193466479, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -73
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033699, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_Pivot.x
@@ -134,6 +158,13 @@ PrefabInstance:
         light is shining. '
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[1].subtitle
+      value: Each book represents one of the stories you just heard.  Your job is
+        to place the books in the proper slots by matching the picture to the story. 
+        Once you place your books correctly your lamp will light up. Click on next
+        when your books are aligned and your light is shining.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].dialogue
       value: Excellent! Did you notice your light is an ultraviolet light?  Ultraviolet
         lights react with certain pigments to shine a color that might otherwise
@@ -233,7 +264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dimensionLimit
-      value: 300
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].dimensionLimit
@@ -266,10 +297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue.Array.data[0].dialogue
-      value: Each book represents one of the stories you just heard.  Your job is
-        to place the books in the proper slots by matching the picture to the story. 
-        Once you place your books correctly your lamp will light up. Click on next
-        when your books are aligned and your light is shining.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[0].dialogue
@@ -291,7 +319,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: fabcfccd190cd4541a3e0acdf8afbe4c, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].yOffset
-      value: -80
+      value: -75
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue.Array.data[0].justifyText
@@ -299,7 +327,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].displayImage.Array.data[0].yOffset
-      value: 40
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[0].justifyText
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].displayImage.Array.data[0].yOffset
@@ -307,7 +339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue.Array.data[0].alignContent
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].alignContent
@@ -328,6 +360,14 @@ PrefabInstance:
     - target: {fileID: 5702960579212335461, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_fontSizeBase
       value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483753743294261379, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483753743294261379, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -38
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
