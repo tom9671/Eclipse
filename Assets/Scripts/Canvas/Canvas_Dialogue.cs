@@ -351,7 +351,6 @@ public class Canvas_Dialogue : MonoBehaviour
                         break;
                     case eAlignment.center:
                         displayImageUI[i].transform.localPosition = new Vector2(-graphicPos.x, 0) + Vector2.up * dialogueSequence[messageIdx].displayImage[i].yOffset;
-                        displayText[i].GetComponent<RectTransform>().sizeDelta = new Vector2(dialogueSize[i].x * 2, dialogueSize[i].y);
                         break;
                 }
             }
@@ -371,6 +370,7 @@ public class Canvas_Dialogue : MonoBehaviour
                         break;
                     case eAlignment.center:
                         displayText[i].transform.localPosition = new Vector2(0, dialoguePos[i].y);
+                        displayText[i].GetComponent<RectTransform>().sizeDelta = new Vector2(dialogueSize[i].x * 2, dialogueSize[i].y);
                         break;
                 }
             }
