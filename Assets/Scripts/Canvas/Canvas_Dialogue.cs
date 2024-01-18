@@ -284,6 +284,16 @@ public class Canvas_Dialogue : MonoBehaviour
                 else
                     displayText[i].horizontalAlignment = HorizontalAlignmentOptions.Right;
             }
+
+            if (i == 0)
+            {
+                if (dialogueSequence[messageIdx].dialogue[i].justifyText == eAlignment.left)
+                    subtitleText.horizontalAlignment = HorizontalAlignmentOptions.Left;
+                else if (dialogueSequence[messageIdx].dialogue[i].justifyText == eAlignment.center)
+                    subtitleText.horizontalAlignment = HorizontalAlignmentOptions.Center;
+                else
+                    subtitleText.horizontalAlignment = HorizontalAlignmentOptions.Right;
+            }
         }
         if (videoPlayer != null)
             videoPlayer.gameObject.SetActive(false);
