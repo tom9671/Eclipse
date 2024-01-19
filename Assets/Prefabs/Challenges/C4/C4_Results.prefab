@@ -69,6 +69,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -185
       objectReference: {fileID: 0}
+    - target: {fileID: 2582144756185018629, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_Color.a
+      value: 0.60784316
+      objectReference: {fileID: 0}
     - target: {fileID: 3014164969800463751, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_SizeDelta.x
       value: -76.2142
@@ -80,6 +84,10 @@ PrefabInstance:
     - target: {fileID: 4104275397158780229, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_text
       value: End Game
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941274632849020555, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5702960578402243714, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_SizeDelta.x

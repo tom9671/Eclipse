@@ -45,7 +45,7 @@ public class Canvas_Stories : MonoBehaviour
         gameObject.SetActive(false);
         if(closedFirst)
         {
-            sequence.ShowDialogueSequence(sequence.dialogue[(int)eDialogueInstance.replay]);
+            sequence.ShowDialogueSequence(sequence.dialogue[(int)eDialogueInstance.replay], true);
             closedFirst = false;
         }
     }

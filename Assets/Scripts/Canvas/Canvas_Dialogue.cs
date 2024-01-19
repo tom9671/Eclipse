@@ -43,6 +43,8 @@ public class DialogueEntry
 
     public GameObject Object;
     public eWaitFor waitFor;
+
+    public UnityEvent onDisplaySequence;
 }
 
 public class Canvas_Dialogue : MonoBehaviour
@@ -162,6 +164,7 @@ public class Canvas_Dialogue : MonoBehaviour
         for (int i = 0; i < textAlpha.Length; i++)
             textAlpha[i] -= 0.25f * (i + 1);
 
+        dialogueSequence[messageIdx].onDisplaySequence.Invoke();
         UpdateTextColor();
 
         subtitleText.text = dialogueSequence[messageIdx].subtitle;
@@ -423,6 +426,7 @@ for (int i = 0; i < 2; i++)
 
     public void Dissappear()
     {
+        gm.timerReal.gameObject.SetActive(true);
         Destroy(gameObject);
     }
 
@@ -459,5 +463,14 @@ for (int i = 0; i < 2; i++)
         nextButton.transform.parent = null;
         nextButton.transform.parent = nextParent;
         nextButton.transform.localPosition = nextPos;
+    }
+
+    public void TogglePlay()
+    {
+        if(audioPlayer != null)
+        {
+            audioPlayer.StopAudio();
+
+        }
     }
 }

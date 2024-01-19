@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     public Canvas_Stories storyMenu;
     public int totalTimeInMinutes = 30;
     public Canvas_Timer timer;
-    Canvas_Timer timerReal;
+    public Canvas_Timer timerReal;
     public Canvas_TimeUp timeUpPrompt;
     public Canvas_Dialogue tryAgainPrompt;
     public Canvas_Dialogue nullInputPrompt;

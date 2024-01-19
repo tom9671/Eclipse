@@ -91,6 +91,7 @@ public class Widget_VoiceOver : MonoBehaviour
     public void StopAudio()
     {
         source.Stop();
+        paused = true;
     }
 
     void UpdateGraphics()

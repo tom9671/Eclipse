@@ -411,12 +411,12 @@ MonoBehaviour:
   _scanZone: {fileID: 2413916527093662025}
   outputText: {fileID: 4629389128755053442}
   answerSprites:
-  - {fileID: 21300000, guid: c49e8f5a57a35b044848567908c42936, type: 3}
-  - {fileID: 21300000, guid: e8d355d40b1ca72429545885fdf9cf21, type: 3}
-  - {fileID: 21300000, guid: 1524a66cbc13e7b4db0101eeeea69c07, type: 3}
-  - {fileID: 21300000, guid: 452b6be86e7fa9548992dce6ba113454, type: 3}
-  - {fileID: 21300000, guid: 4908f4de19ef7b5469dc77540baa0552, type: 3}
-  - {fileID: 21300000, guid: 0cfbeb45559ca1747873ab2047f85914, type: 3}
+  - {fileID: 21300000, guid: ad416b4d74962d744899ecfad77f4c81, type: 3}
+  - {fileID: 21300000, guid: 8cfb0af5e70d53c4897115dbcaf6c61a, type: 3}
+  - {fileID: 21300000, guid: 7a263dc5c51c2eb46a861771cb92c9d0, type: 3}
+  - {fileID: 21300000, guid: 7fec10e5035ad56478d297163de22aee, type: 3}
+  - {fileID: 21300000, guid: 9c266e0100a0605499427e3149f0f5cc, type: 3}
+  - {fileID: 21300000, guid: c7e65081685d47847b13354764203905, type: 3}
   displayImage: {fileID: 937573241359669986}
 --- !u!1 &2413916526581052005
 GameObject:
@@ -543,7 +543,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -240, y: -158}
+  m_AnchoredPosition: {x: -240, y: -228}
   m_SizeDelta: {x: 600, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2413916526807655621

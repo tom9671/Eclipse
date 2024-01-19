@@ -38,10 +38,13 @@ public class Canvas_Sequence : MonoBehaviour
         gm = GameManager.gm;
 
         for(int i = 0; i < acceptableAnswers.Length; i++)
+        {
             acceptableAnswers[i] = acceptableAnswers[i].ToLower();
+            acceptableAnswers[i] = string.Concat(acceptableAnswers[i].Where(c => !char.IsWhiteSpace(c)));
+        }
 
         UpdateWithPlayerNames();
-        ShowDialogueSequence(dialogue[(int)eDialogueInstance.introduction]);
+        ShowDialogueSequence(dialogue[(int)eDialogueInstance.introduction], true);
     }
 
     void FixedUpdate()
@@ -93,20 +96,22 @@ public class Canvas_Sequence : MonoBehaviour
 
     public void Review(int _idx)
     {
-        ShowDialogueSequence(review[_idx]);
+        gm.timerReal.gameObject.SetActive(false);
+        ShowDialogueSequence(review[_idx], false);
     }
 
     public void Hint()
     {
         if(hints.Length != 0)
         {
+            gm.timerReal.gameObject.SetActive(false);
             if (hintIdx >= hints.Length)
                 hintIdx = 0;
 
             if (hints[hintIdx] != null)
             {
                 gm.ChangeTime(-5);
-                ShowDialogueSequence(hints[hintIdx]);
+                ShowDialogueSequence(hints[hintIdx], true);
             }
             hintIdx++;
             gm.UseHint(sequenceIdx);
@@ -118,15 +123,18 @@ public class Canvas_Sequence : MonoBehaviour
 
     }
 
-    public void ShowDialogueSequence(Canvas_Dialogue _dialogue)
+    public void ShowDialogueSequence(Canvas_Dialogue _dialogue, bool autoPlay)
     {
         instance = Instantiate(_dialogue, Vector3.zero, Quaternion.identity);
         instance.Init(this);
+        if (!autoPlay)
+            instance.TogglePlay();
     }
 
     public void SubmitAnswer()
     {
         string answer = answerInput.text.ToLower();
+        answer = string.Concat(answer.Where(c => !char.IsWhiteSpace(c)));
 
         if (string.Concat(answer.Where(c => !char.IsWhiteSpace(c))) == "")
         {
@@ -160,20 +168,20 @@ public class Canvas_Sequence : MonoBehaviour
         if (final)
             EndGame();
 
-        ShowDialogueSequence(dialogue[(int)eDialogueInstance.conclusion]);
+        ShowDialogueSequence(dialogue[(int)eDialogueInstance.conclusion], true);
     }
 
     public void Failure()
     {
         ScannerCooldownText.gameObject.SetActive(true);
         scannerCooldown = 5.5f;
-        ShowDialogueSequence(gm.tryAgainPrompt);
+        ShowDialogueSequence(gm.tryAgainPrompt, true);
         gm.IncorrectAnswer(sequenceIdx);
     }
 
     void EmptyInput()
     {
-        ShowDialogueSequence(gm.nullInputPrompt);
+        ShowDialogueSequence(gm.nullInputPrompt, true);
         gm.IncorrectAnswer(sequenceIdx);
     }
 
@@ -218,6 +226,6 @@ public class Canvas_Sequence : MonoBehaviour
 
     public void OpenResults()
     {
-        ShowDialogueSequence(gm.resultScreen);
+        ShowDialogueSequence(gm.resultScreen, true);
     }
 }
