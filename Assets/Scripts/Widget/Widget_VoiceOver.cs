@@ -92,6 +92,7 @@ public class Widget_VoiceOver : MonoBehaviour
     {
         source.Stop();
         paused = true;
+        UpdateGraphics();
     }
 
     void UpdateGraphics()
