@@ -17,6 +17,7 @@ public class ImageParams
     public Sprite image;
     public eAlignment alignContent;
     public float yOffset;
+    public float xOffset;
 }
 
 [System.Serializable]
@@ -25,6 +26,7 @@ public class DialogueParams
     public string dialogue;
     public eAlignment alignContent;
     public eAlignment justifyText = eAlignment.left;
+    public Vector2 offset;
 }
 
 [System.Serializable]
@@ -348,12 +350,15 @@ public class Canvas_Dialogue : MonoBehaviour
                 {
                     case eAlignment.right:
                         displayImageUI[i].transform.localPosition = Vector3.up * dialogueSequence[messageIdx].displayImage[i].yOffset;
+                        displayImageUI[i].transform.localPosition += Vector3.right * dialogueSequence[messageIdx].displayImage[i].xOffset;
                         break;
                     case eAlignment.left:
                         displayImageUI[i].transform.localPosition = new Vector2(-graphicPos.x * 2, 0) + Vector2.up * dialogueSequence[messageIdx].displayImage[i].yOffset;
+                        displayImageUI[i].transform.localPosition += Vector3.right * dialogueSequence[messageIdx].displayImage[i].xOffset;
                         break;
                     case eAlignment.center:
                         displayImageUI[i].transform.localPosition = new Vector2(-graphicPos.x, 0) + Vector2.up * dialogueSequence[messageIdx].displayImage[i].yOffset;
+                        displayImageUI[i].transform.localPosition += Vector3.right * dialogueSequence[messageIdx].displayImage[i].xOffset;
                         break;
                 }
             }
@@ -366,13 +371,13 @@ public class Canvas_Dialogue : MonoBehaviour
                 switch (dialogueSequence[messageIdx].dialogue[i].alignContent)
                 {
                     case eAlignment.right:
-                        displayText[i].transform.localPosition = new Vector2(-dialoguePos[i].x, dialoguePos[i].y);
+                        displayText[i].transform.localPosition = new Vector2(-dialoguePos[i].x, dialoguePos[i].y) + dialogueSequence[messageIdx].dialogue[i].offset;
                         break;
                     case eAlignment.left:
-                        displayText[i].transform.localPosition = dialoguePos[i];
+                        displayText[i].transform.localPosition = new Vector2(dialoguePos[i].x, dialoguePos[i].y) + dialogueSequence[messageIdx].dialogue[i].offset;
                         break;
                     case eAlignment.center:
-                        displayText[i].transform.localPosition = new Vector2(0, dialoguePos[i].y);
+                        displayText[i].transform.localPosition = new Vector2(0, dialoguePos[i].y) + dialogueSequence[messageIdx].dialogue[i].offset;
                         displayText[i].GetComponent<RectTransform>().sizeDelta = new Vector2(dialogueSize[i].x * 2, dialogueSize[i].y);
                         break;
                 }
