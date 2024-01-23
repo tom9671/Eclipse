@@ -151,11 +151,19 @@ public class GameManager : MonoBehaviour
 
     public int GetTimeInSeconds()
     {
-        return timer.GetTimeInSeconds();
+        return timerReal.GetTimeInSeconds();
     }
 
     public string GetTimeString()
     {
-        return timer.GetTotalTime();
+        return timerReal.GetTotalTime();
+    }
+
+    void Update()
+    {
+        if (Input.GetButtonDown("Jump"))
+        {
+            Debug.Log("" + GetIncorrectAnswers() + " " + GetTimeInSeconds() + " " + GetTimeString() + " " + GetHintsUsed());
+        }
     }
 }
