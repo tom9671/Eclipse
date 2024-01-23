@@ -234,6 +234,10 @@ PrefabInstance:
       value: 'Thanks to Simmons: Txt TBD'
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].justifyText
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: onEndDialogue.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -259,11 +263,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579212335459, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -65.5
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579212335459, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.5922
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579212335461, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_VerticalAlignment

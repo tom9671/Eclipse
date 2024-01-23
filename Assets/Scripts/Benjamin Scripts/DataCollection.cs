@@ -6,26 +6,81 @@ using UnityEngine.Networking;
 
 public class DataCollection : MonoBehaviour
 {
-    private string intHintsUsed = "test";
-    private string intTimesIncorrect = "test";
-    private string intTotalTime = "test";
+    private string[] strData = File.ReadAllLines("DataCollection.txt");
+    private List<string> strDataList = new List<string>();
+
+    private bool boolHaveInternet = false;
+    private bool boolFirstTime = true;
+
+    GameObject goGameManager;
 
     [SerializeField]
     private string BASE_URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfe79NkAVfNv339oSyJTofrB4jsqAswbeFUhZBb8fnEdKGd_Q/formResponse";
+    private string TEST_URL = "https://google.com/";
     public void Start()
     {
-        WWWForm form = new WWWForm();
+        foreach (string data in strData)
+        {
+            strDataList.Add(data);
+        }
 
-        StartCoroutine(Post(intHintsUsed, intTimesIncorrect, intTotalTime));
+        if (boolFirstTime == true)
+        {
+            StartCoroutine(InternetCheck());
+        }        
+
     }
 
-    IEnumerator Post(string intHintUsed, string intTimesIncorrect, string intTotalTime)
+    IEnumerator InternetCheck() 
+    {
+        UnityWebRequest www = new UnityWebRequest(TEST_URL);
+        yield return www.SendWebRequest();
+
+        if (www.error != null)
+        {
+            boolFirstTime = false;
+            boolHaveInternet = false;
+            Debug.Log(www.result);
+
+            Debug.Log(strDataList.Count);
+        }
+        else
+        {
+            boolFirstTime = false;
+            boolHaveInternet = true;
+            Debug.Log(www.result);
+
+            if (strDataList.Count != 0)
+            {
+                do
+                {
+                    if (boolHaveInternet == true)
+                    {
+                        StartCoroutine(Post(strDataList));
+                        for (int i = 0; i < 3; i++)
+                        {
+                            strDataList.RemoveAt(0);
+                        }
+                    }
+
+                } while (strDataList.Count != 0);
+
+                using (StreamWriter writer = new StreamWriter("DataCollection.txt", false))
+                {
+                    writer.Write("");
+                }
+
+            }
+        }
+    }
+
+    IEnumerator Post(List<string> strDataList)
     {
         WWWForm form = new WWWForm();
 
-        form.AddField("entry.741020485", intHintUsed);
-        form.AddField("entry.1388233873", intTimesIncorrect);
-        form.AddField("entry.2012214965", intTotalTime);
+        form.AddField("entry.741020485", strDataList[0]);
+        form.AddField("entry.1388233873", strDataList[1]);
+        form.AddField("entry.2012214965", strDataList[2]);
 
         using (UnityWebRequest www = UnityWebRequest.Post(BASE_URL, form))
         {
@@ -33,19 +88,47 @@ public class DataCollection : MonoBehaviour
 
             if (www.result == UnityWebRequest.Result.ConnectionError)
             {
-                Debug.Log("no connection aquired");
+                Debug.Log("Cannot connect to data Aquzition");
             }
             else
             {
                 Debug.Log("Connected");
 
+
                 yield return www.SendWebRequest();
             }
+
+            Debug.Log(www.result);
         }
     }
 
-    public void SendData()
+    public void GrabData()
     {
-        StartCoroutine(Post(intHintsUsed, intTimesIncorrect, intTotalTime));
+        foreach (string data in strData)
+        {
+            strDataList.Add(data);
+        }
+
+        Debug.Log(strDataList.Count);
+
+        using (StreamWriter writer = new StreamWriter("DataCollection.txt", append: true))
+        {
+            string strHintsUsed, strIncorrect, strGetTime;
+
+            if (strDataList.Count > 0)
+            {
+                //writer.WriteLine("");
+            }
+
+            strHintsUsed = gameObject.GetComponent<GameManager>().GetHintsUsed().ToString();
+            strIncorrect = gameObject.GetComponent<GameManager>().GetIncorrectAnswers().ToString();
+            strGetTime = gameObject.GetComponent<GameManager>().GetTimeInSeconds().ToString();
+
+            writer.WriteLine(strHintsUsed);
+            writer.WriteLine(strIncorrect);
+            writer.WriteLine(strGetTime);
+        }
+
+         Debug.Log("Done");
     }
 }

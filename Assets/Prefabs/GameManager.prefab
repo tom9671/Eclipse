@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8916289203591955133}
   - component: {fileID: 8916289203591955132}
+  - component: {fileID: 1553560787}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -51,13 +52,28 @@ MonoBehaviour:
   - {fileID: 2533609351610090292, guid: 16ce876fdcbea164fb118837eb5b7f83, type: 3}
   - {fileID: 2311054990902660475, guid: 069a31f49f74b8249a1a8c8e8049c7e6, type: 3}
   - {fileID: 2664831077181212010, guid: adf095cbd4cb0304abb84245cb6b4b0b, type: 3}
-  resolution: {x: 1920, y: 1080}
+  aspectRatio: {x: 4, y: 3}
   scannerObject: {fileID: 5112593745680712410, guid: dd331d00808f9224780ba2ebe2b28abf, type: 3}
   storyMenu: {fileID: 1479890123852137617, guid: 2fee5a03c165b644e8d2ceadc1b6d9a1, type: 3}
-  totalTimeInSeconds: 1800
+  totalTimeInMinutes: 30
   timer: {fileID: 9001314965870351832, guid: 82f5b180a4b37474a9db544e801dfe1d, type: 3}
+  timerReal: {fileID: 0}
   timeUpPrompt: {fileID: 5862649312709334584, guid: c547881fd9758be44a7e59e5520bd10b, type: 3}
   tryAgainPrompt: {fileID: 4596253473966703912, guid: 48e9eb60e30f5b749b56de7bf18ce162, type: 3}
+  nullInputPrompt: {fileID: 4596253473966703912, guid: 89b74a611ce8d944ba815bd9724718a7, type: 3}
   resultScreen: {fileID: 6521017985947407148, guid: bdb5a3b195f25ee45a7c2754d6255055, type: 3}
   videoPlayer: {fileID: 987560792132530327, guid: a4486336987e5db4ebf605e15277e8d3, type: 3}
   audioPlayer: {fileID: 1542755695400946784, guid: b8f94b41876e96e44b9886789ec5033c, type: 3}
+--- !u!114 &1553560787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8916289203591955106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8be3873151c964fb17a6bd7eac7d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BASE_URL: https://docs.google.com/forms/u/0/d/e/1FAIpQLSfe79NkAVfNv339oSyJTofrB4jsqAswbeFUhZBb8fnEdKGd_Q/formResponse

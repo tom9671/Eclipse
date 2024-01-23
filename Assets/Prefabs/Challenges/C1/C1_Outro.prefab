@@ -15,6 +15,18 @@ PrefabInstance:
       propertyPath: m_text
       value: Good Job Team @
       objectReference: {fileID: 0}
+    - target: {fileID: 1083710202397392237, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_margin.w
+      value: -84.81675
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083710202397392237, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_margin.z
+      value: 353.40326
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633369386193466479, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 2442756938190909031, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.5

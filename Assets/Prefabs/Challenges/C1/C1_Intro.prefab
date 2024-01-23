@@ -44,6 +44,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1633369386193466479, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633369386193466479, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -50
       objectReference: {fileID: 0}
@@ -443,9 +447,25 @@ PrefabInstance:
         the Sun, Moon, and Earth align to create shadows and eclipses.
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].offset.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].offset.y
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[1].dialogue
       value: The Moon blocks the light from the Sun and creates a large shadow on
         Earth
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[1].offset.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[1].offset.y
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[2].dialogue
@@ -467,10 +487,22 @@ PrefabInstance:
         of totality.
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[0].offset.x
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[1].dialogue
       value: Once you find the correct location to place your Moon, look at the numbers
         on the table edge. These numbers represent the distance the Earth is from
         the Moon during the April solar eclipse.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[1].offset.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[1].offset.y
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image
@@ -505,6 +537,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].xOffset
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].yOffset
       value: 0
       objectReference: {fileID: 0}
@@ -513,8 +549,16 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[1].displayImage.Array.data[0].xOffset
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].displayImage.Array.data[0].yOffset
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[1].displayImage.Array.data[1].xOffset
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].displayImage.Array.data[1].yOffset
@@ -529,12 +573,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[2].displayImage.Array.data[0].xOffset
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].displayImage.Array.data[0].yOffset
       value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[2].displayImage.Array.data[1].xOffset
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].displayImage.Array.data[1].yOffset
-      value: -125
+      value: -135
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[1].alignContent
@@ -634,7 +686,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7483753743294261379, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 17
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 7979368475761043712, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_RootOrder
