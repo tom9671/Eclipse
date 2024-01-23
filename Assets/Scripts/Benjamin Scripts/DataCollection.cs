@@ -113,16 +113,16 @@ public class DataCollection : MonoBehaviour
 
         using (StreamWriter writer = new StreamWriter("DataCollection.txt", append: true))
         {
-            string strHintsUsed, strIncorrect, strGetTime;
+            int strHintsUsed, strIncorrect, strGetTime;
 
             if (strDataList.Count > 0)
             {
                 //writer.WriteLine("");
             }
 
-            strHintsUsed = gameObject.GetComponent<GameManager>().GetHintsUsed().ToString();
-            strIncorrect = gameObject.GetComponent<GameManager>().GetIncorrectAnswers().ToString();
-            strGetTime = gameObject.GetComponent<GameManager>().GetTimeInSeconds().ToString();
+            strHintsUsed = gameObject.GetComponent<GameManager>().GetHintsUsed();
+            strIncorrect = gameObject.GetComponent<GameManager>().GetIncorrectAnswers();
+            strGetTime = gameObject.GetComponent<GameManager>().GetTimeInSeconds();
 
             writer.WriteLine(strHintsUsed);
             writer.WriteLine(strIncorrect);

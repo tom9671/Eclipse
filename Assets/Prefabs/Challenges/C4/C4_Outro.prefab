@@ -253,7 +253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8007082909503012904, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8007082909503012904, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -262,7 +262,7 @@ PrefabInstance:
     - target: {fileID: 8007082909503012904, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1553560787, guid: 82bbb64daedc5d84abdf96007d810e76, type: 3}
+      objectReference: {fileID: 8348891315615866995}
     - target: {fileID: 8007082909503012904, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -273,7 +273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8007082909503012904, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GrabData
+      value: OpenResults
       objectReference: {fileID: 0}
     - target: {fileID: 8007082909503012904, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -281,7 +281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8007082909503012904, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: DataCollection, Assembly-CSharp
+      value: Canvas_Dialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8007082909503012904, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
