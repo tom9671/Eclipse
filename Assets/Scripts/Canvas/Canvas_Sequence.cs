@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using TMPro;
 using System.Linq;
 
@@ -31,6 +32,8 @@ public class Canvas_Sequence : MonoBehaviour
     int sequenceIdx;
 
     GameObject storyMenu;
+
+    public UnityEvent onSuccessfulAnswer;
     // Start is called before the first frame update
     public void Init(int _sequenceIdx)
     {
@@ -136,7 +139,7 @@ public class Canvas_Sequence : MonoBehaviour
         string answer = answerInput.text.ToLower();
         answer = string.Concat(answer.Where(c => !char.IsWhiteSpace(c)));
 
-        if (string.Concat(answer.Where(c => !char.IsWhiteSpace(c))) == "")
+        if (answer == "")
         {
             EmptyInput();
         }
@@ -165,6 +168,8 @@ public class Canvas_Sequence : MonoBehaviour
 
     public void Success()
     {
+        onSuccessfulAnswer.Invoke();
+
         if (final)
             EndGame();
 

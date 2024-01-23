@@ -106,7 +106,11 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
-        if(timerReal != null)
+        DataCollection dc = FindObjectOfType<DataCollection>();
+        if (dc != null)
+            dc.GrabData();
+
+        if (timerReal != null)
         {
             timerReal.EndGame();
         }
