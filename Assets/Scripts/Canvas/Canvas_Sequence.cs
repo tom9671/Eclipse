@@ -40,7 +40,7 @@ public class Canvas_Sequence : MonoBehaviour
         sequenceIdx = _sequenceIdx;
         gm = GameManager.gm;
 
-        for(int i = 0; i < acceptableAnswers.Length; i++)
+        for (int i = 0; i < acceptableAnswers.Length; i++)
         {
             acceptableAnswers[i] = acceptableAnswers[i].ToLower();
             acceptableAnswers[i] = string.Concat(acceptableAnswers[i].Where(c => !char.IsWhiteSpace(c)));
@@ -99,7 +99,7 @@ public class Canvas_Sequence : MonoBehaviour
 
     public void Review(int _idx)
     {
-        gm.timerReal.gameObject.SetActive(false);
+        gm.timerReal.GetComponent<Canvas>().sortingOrder = 0;
         ShowDialogueSequence(review[_idx], false);
     }
 
@@ -107,7 +107,7 @@ public class Canvas_Sequence : MonoBehaviour
     {
         if(hints.Length != 0)
         {
-            gm.timerReal.gameObject.SetActive(false);
+            gm.timerReal.GetComponent<Canvas>().sortingOrder = 0;
             if (hintIdx >= hints.Length)
                 hintIdx = 0;
 
