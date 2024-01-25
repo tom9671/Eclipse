@@ -11,6 +11,22 @@ PrefabInstance:
       propertyPath: m_text
       value: Metztli
       objectReference: {fileID: 0}
+    - target: {fileID: 1083710202397392237, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083710202397392237, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633369386193466479, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633369386193466479, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -55
+      objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033699, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_Pivot.x
       value: 0

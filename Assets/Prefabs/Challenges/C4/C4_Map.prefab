@@ -160,9 +160,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 85b4d4226c642e642bec8c9e164f819e, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].dimensionLimit
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].displayImage.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image
       value: 
       objectReference: {fileID: 21300000, guid: cd228cfc97e891b4995db4898a31e8ed, type: 3}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[1].image
+      value: 
+      objectReference: {fileID: 21300000, guid: 233298dc6dfebb44388140e2f98aea38, type: 3}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[1].alignContent
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5702960579212335460, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_IsActive
       value: 0

@@ -8,14 +8,19 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1060920357884987792, guid: dbb60dbc8fe20194e925355f8daf05cf, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].subtitle
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060920357884987792, guid: dbb60dbc8fe20194e925355f8daf05cf, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogueClip
       value: 
       objectReference: {fileID: 8300000, guid: 5b117746f3cc7d044823ed10fe268b0a, type: 3}
     - target: {fileID: 1060920357884987792, guid: dbb60dbc8fe20194e925355f8daf05cf, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: Another one of your monuments was built during the 12th century by the
-        king of the Khmer Empire in Southeast Asia. This temple is called the Temple
-        of Angkor Wat.
+      value: The Ancient Egyptians also had an interest in astronomy. Many Ancient
+        Egyptian pyramids and monuments were aligned with the cardinal points of
+        the compass.  Your 3rd monument is a replica of The Temple of Abu Simbel
+        in Egypt.
       objectReference: {fileID: 0}
     - target: {fileID: 1060920357884987792, guid: dbb60dbc8fe20194e925355f8daf05cf, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image

@@ -77,7 +77,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960578402243717, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033699, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_Pivot.x
@@ -197,7 +197,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 85b4d4226c642e642bec8c9e164f819e, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dimensionLimit
-      value: 250
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.size
@@ -208,16 +208,24 @@ PrefabInstance:
       value: Shows a picture of the correct QR code.
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].offset.y
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image
       value: 
-      objectReference: {fileID: 21300000, guid: ca81bf69cd2c4b94491ab3396ba9024e, type: 3}
+      objectReference: {fileID: 21300000, guid: 45d71dc95deee7d4c9c3258b6a499484, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].justifyText
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].xOffset
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].yOffset
-      value: 25
+      value: -45
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].alignContent
@@ -257,7 +265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6944887227942968859, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7448187029321439749, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_Sprite

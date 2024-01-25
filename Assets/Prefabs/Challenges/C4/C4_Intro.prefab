@@ -343,7 +343,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue.Array.data[0].dialogue
-      value: Have you ever seen an eclipse?
+      value: Have you ever seen an eclipse? Why don't eclipses happen with periodic
+        regularity like the lunar cycle, where you can see a "new moon" once every
+        month?
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue.Array.data[0].offset.x
