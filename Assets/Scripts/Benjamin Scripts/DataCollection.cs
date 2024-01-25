@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 public class DataCollection : MonoBehaviour
 {
-    private string[] strData = File.ReadAllLines("DataCollection.txt");
+    private string[] strData;
     private List<string> strDataList = new List<string>();
 
     private bool boolHaveInternet = false;
@@ -19,6 +20,15 @@ public class DataCollection : MonoBehaviour
     private string TEST_URL = "https://google.com/";
     public void Start()
     {
+        if (!File.Exists("DataCollection.txt"))
+        {
+            File.CreateText("DataCollection.txt");
+            Invoke("Reset", 1);
+            return;
+        }
+
+        strData = File.ReadAllLines("DataCollection.txt");
+
         foreach (string data in strData)
         {
             strDataList.Add(data);
@@ -130,5 +140,10 @@ public class DataCollection : MonoBehaviour
         }
 
          Debug.Log("Done");
+    }
+
+    void Reset()
+    {
+        SceneManager.LoadScene("Main");
     }
 }

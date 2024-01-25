@@ -431,7 +431,7 @@ for (int i = 0; i < 2; i++)
 
     public void Dissappear()
     {
-        gm.timerReal.GetComponent<Canvas>().sortingOrder = 3;
+        gm.timerReal.GetComponent<Canvas>().sortingOrder = 11;
         Destroy(gameObject);
     }
 
