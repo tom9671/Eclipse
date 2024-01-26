@@ -20,14 +20,14 @@ public class DataCollection : MonoBehaviour
     private string TEST_URL = "https://google.com/";
     public void Start()
     {
-        if (!File.Exists("DataCollection.txt"))
+        if (!File.Exists(Application.persistentDataPath + "DataCollection.txt"))
         {
-            File.CreateText("DataCollection.txt");
+            File.CreateText(Application.persistentDataPath + "DataCollection.txt");
             Invoke("Reset", 1);
             return;
         }
 
-        strData = File.ReadAllLines("DataCollection.txt");
+        strData = File.ReadAllLines(Application.persistentDataPath + "DataCollection.txt");
 
         foreach (string data in strData)
         {
@@ -75,7 +75,7 @@ public class DataCollection : MonoBehaviour
 
                 } while (strDataList.Count != 0);
 
-                using (StreamWriter writer = new StreamWriter("DataCollection.txt", false))
+                using (StreamWriter writer = new StreamWriter(Application.persistentDataPath + "DataCollection.txt", false))
                 {
                     writer.Write("");
                 }
@@ -121,7 +121,7 @@ public class DataCollection : MonoBehaviour
 
         Debug.Log(strDataList.Count);
 
-        using (StreamWriter writer = new StreamWriter("DataCollection.txt", append: true))
+        using (StreamWriter writer = new StreamWriter(Application.persistentDataPath + "DataCollection.txt", append: true))
         {
             int strHintsUsed, strIncorrect, strGetTime;
 
