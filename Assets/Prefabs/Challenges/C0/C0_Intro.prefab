@@ -305,7 +305,7 @@ PrefabInstance:
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogueClip
       value: 
-      objectReference: {fileID: 8300000, guid: ecd2448369c0cb8448de0bb28eec8174, type: 3}
+      objectReference: {fileID: 8300000, guid: 7069036b6fb4e7342bd7f564e59abcf7, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage
       value: 
@@ -313,7 +313,7 @@ PrefabInstance:
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogueClip
       value: 
-      objectReference: {fileID: 8300000, guid: 11e9057a3cacd694fa60953120427bec, type: 3}
+      objectReference: {fileID: 8300000, guid: 4ea8aa08066db6243aa94303a99df2e4, type: 3}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].displayImage
       value: 
@@ -360,18 +360,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: Astrophysics professor in the Department of Physics and Astronomy at
-        University of Texas, San Antonio.  My field of research is black holes and
-        I have regularly used some of the largest telescopes on Earth, located in
-        Hawaii, Chile, and La Palma, for my research.
+      value: Hello, my name is Dr. Chris Packham and I am an astrophysics professor
+        at the University of Texas, San Antonio. My field of research is black holes,
+        and I have regularly used some of the largest telescopes on Earth.
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue.Array.data[0].dialogue
-      value: Astrophysicist at the Institute for Advanced Study.  I am a member of
-        the Event Horizon Telescope Collaboration and my field of research is using
-        mathematical equations to create crisper images of black holes. I have spent
-        time at the Steward Observatory at the University of Arizona and the Black
-        Hole Initiative at Harvard.
+      value: Hello, my name is Dr. Lia Medeiros and I am an Astrophysicist at Princeton
+        University. My field of research is using equations to create crisper images
+        of black holes.
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image
