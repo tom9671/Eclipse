@@ -61,6 +61,12 @@ public class GameManager : MonoBehaviour
 
         timePassword = PlayerPrefs.GetString("TimePassword");
         totalTimeInMinutes = PlayerPrefs.GetInt("TotalTimeMinutes");
+
+        if (timePassword == "")
+        {
+            PlayerPrefs.SetString("TimePassword", "Education24");
+            timePassword = PlayerPrefs.GetString("TimePassword");
+        }
     }
 
     public void StartChallenge(int _challengeIdx)
@@ -87,7 +93,9 @@ public class GameManager : MonoBehaviour
 
     public void TimeUp()
     {
-        //Instantiate(timeUpPrompt, Vector3.zero, Quaternion.identity);
+        DataCollection dc = FindObjectOfType<DataCollection>();
+        if (dc != null)
+            dc.GrabData();
 
         Canvas_Dialogue instance = Instantiate(timeUpPrompt, Vector3.zero, Quaternion.identity);
         instance.Init(null);
@@ -187,5 +195,10 @@ public class GameManager : MonoBehaviour
     public string GetPassword()
     {
         return timePassword;
+    }
+
+    public void SetPassword(string _password)
+    {
+        timePassword = _password;
     }
 }

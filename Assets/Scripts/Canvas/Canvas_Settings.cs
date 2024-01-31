@@ -32,6 +32,7 @@ public class Canvas_Settings : MonoBehaviour
         PlayerPrefs.SetString("TimePassword", timePasswordField.text);
         PlayerPrefs.SetInt("TotalTimeMinutes", minutesTotal);
         gm.totalTimeInMinutes = minutesTotal;
+        gm.SetPassword(timePasswordField.text);
         Close();
     }
 
