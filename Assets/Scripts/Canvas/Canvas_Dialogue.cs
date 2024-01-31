@@ -452,7 +452,7 @@ for (int i = 0; i < 2; i++)
 
     public void OpenResults()
     {
-        sequence.OpenResults();
+        gm.OpenResults();
     }
 
     public void ResetGame()

@@ -58,7 +58,7 @@ MonoBehaviour:
   totalTimeInMinutes: 30
   timer: {fileID: 9001314965870351832, guid: 82f5b180a4b37474a9db544e801dfe1d, type: 3}
   timerReal: {fileID: 0}
-  timeUpPrompt: {fileID: 5862649312709334584, guid: c547881fd9758be44a7e59e5520bd10b, type: 3}
+  timeUpPrompt: {fileID: 8348891315615866995, guid: 0c135c11009b30544a8c2f12633eea67, type: 3}
   tryAgainPrompt: {fileID: 4596253473966703912, guid: 48e9eb60e30f5b749b56de7bf18ce162, type: 3}
   nullInputPrompt: {fileID: 4596253473966703912, guid: 89b74a611ce8d944ba815bd9724718a7, type: 3}
   resultScreen: {fileID: 6521017985947407148, guid: bdb5a3b195f25ee45a7c2754d6255055, type: 3}

@@ -1,20 +1,31 @@
 using UnityEngine;
 using System.Collections;
 using TMPro;
+using System.Linq;
 
 public class Canvas_Timer : MonoBehaviour
 {
     GameManager gm;
 
     public TMP_Text timerText;
+    public int warningPeriod = 120;
     int timeLimit;
     int timeLeft;
+
+    public GameObject extraTimePanel;
+    public TMP_InputField passwordField;
+    public TMP_InputField extraTimeField;
+
+    public string password = "education24";
 
     bool end;
     // Start is called before the first frame update
     public void Init(int _timeLimit)
     {
         gm = GameManager.gm;
+
+        password = string.Concat(password.Where(c => !char.IsWhiteSpace(c)));
+        password = password.ToLower();
 
         timerText.text = (_timeLimit / 60) + ":00";
 
@@ -30,7 +41,8 @@ public class Canvas_Timer : MonoBehaviour
             yield return new WaitForSeconds(1);
 
             timeLeft--;
-            timeLeft = Mathf.Clamp(timeLeft, 0, timeLimit);
+            if (timeLeft <= 0)
+                timeLeft = 0;
 
             ShowTimeLeft();
 
@@ -44,7 +56,8 @@ public class Canvas_Timer : MonoBehaviour
     public void ChangeTime(int _difference)
     {
         timeLeft += _difference;
-        timeLeft = Mathf.Clamp(timeLeft, 0, timeLimit);
+        if (timeLeft <= 0)
+            timeLeft = 0;
         ShowTimeLeft();
     }
 
@@ -62,6 +75,14 @@ public class Canvas_Timer : MonoBehaviour
             timerText.text = minutes + ":" + seconds;
         else
             timerText.text = minutes + ":0" + seconds;
+
+        if(timeLeft <= warningPeriod)
+        {
+            if(timeLeft % 2 == 1)
+                timerText.color = Color.black;
+            else
+                timerText.color = Color.red;
+        }
     }
 
     public void EndGame()
@@ -90,5 +111,29 @@ public class Canvas_Timer : MonoBehaviour
     public int GetTimeInSeconds()
     {
         return timeLimit - timeLeft;
+    }
+
+    public void OpenPanel()
+    {
+        password = gm.GetPassword();
+
+        extraTimePanel.SetActive(true);
+    }
+
+    public void AddTime()
+    {
+        string enteredPassword = string.Concat(passwordField.text.Where(c => !char.IsWhiteSpace(c)));
+        enteredPassword = enteredPassword.ToLower();
+        if (enteredPassword == password)
+        {
+            int change = System.Int32.Parse(extraTimeField.text);
+            timeLeft += (change * 60);
+            ShowTimeLeft();
+        }
+
+        passwordField.text = "";
+        extraTimeField.text = "";
+
+        extraTimePanel.SetActive(false);
     }
 }

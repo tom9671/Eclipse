@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public int totalTimeInMinutes = 30;
     public Canvas_Timer timer;
     public Canvas_Timer timerReal;
-    public Canvas_TimeUp timeUpPrompt;
+    public Canvas_Dialogue timeUpPrompt;
     public Canvas_Dialogue tryAgainPrompt;
     public Canvas_Dialogue nullInputPrompt;
     public Canvas_Dialogue resultScreen;
@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
     //Variables to track
     int[] numbHintsUsed;
     int[] incorrectAnswers;
+
+    string timePassword;
 
     void Awake()
     {
@@ -52,10 +54,12 @@ public class GameManager : MonoBehaviour
 
         if(PlayerPrefs.GetInt("FirstTime") == 0)
         {
+            PlayerPrefs.SetString("TimePassword", "Education24");
             PlayerPrefs.SetInt("TotalTimeMinutes", 30);
             PlayerPrefs.SetInt("FirstTime", 1);
         }
 
+        timePassword = PlayerPrefs.GetString("TimePassword");
         totalTimeInMinutes = PlayerPrefs.GetInt("TotalTimeMinutes");
     }
 
@@ -83,7 +87,16 @@ public class GameManager : MonoBehaviour
 
     public void TimeUp()
     {
-        Instantiate(timeUpPrompt, Vector3.zero, Quaternion.identity);
+        //Instantiate(timeUpPrompt, Vector3.zero, Quaternion.identity);
+
+        Canvas_Dialogue instance = Instantiate(timeUpPrompt, Vector3.zero, Quaternion.identity);
+        instance.Init(null);
+    }
+
+    public void OpenResults()
+    {
+        Canvas_Dialogue instance = Instantiate(resultScreen, Vector3.zero, Quaternion.identity);
+        instance.Init(null);
     }
 
     public string GetTeamName()
@@ -169,5 +182,10 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("" + GetIncorrectAnswers() + " " + GetTimeInSeconds() + " " + GetTimeString() + " " + GetHintsUsed());
         }
+    }
+
+    public string GetPassword()
+    {
+        return timePassword;
     }
 }

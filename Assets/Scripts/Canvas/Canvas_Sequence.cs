@@ -15,7 +15,7 @@ public class Canvas_Sequence : MonoBehaviour
     public Canvas_Dialogue[] review;
     public Canvas_Dialogue[] hints;
 
-    public TMP_InputField answerInput;
+    public TMP_InputField[] answerInput;
 
     public string[] acceptableAnswers;
 
@@ -136,7 +136,9 @@ public class Canvas_Sequence : MonoBehaviour
 
     public void SubmitAnswer()
     {
-        string answer = answerInput.text.ToLower();
+        string answer = "";
+        for (int i = 0; i < answerInput.Length; i++)
+            answer += answerInput[i].text.ToLower();
         answer = string.Concat(answer.Where(c => !char.IsWhiteSpace(c)));
 
         if (answer == "")
@@ -211,7 +213,10 @@ public class Canvas_Sequence : MonoBehaviour
 
     public void UpdateTeamName()
     {
-        gm.SetTeamName(answerInput.text);
+        string answer = "";
+        for (int i = 0; i < answerInput.Length; i++)
+            answer += answerInput[i].text;
+            gm.SetTeamName(answer);
     }
 
     public void OpenMobileKeyboard(bool _justNumbers)

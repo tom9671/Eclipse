@@ -8,6 +8,7 @@ public class Canvas_Settings : MonoBehaviour
     int minutesTotal;
 
     public TMP_Text minutesText;
+    public TMP_InputField timePasswordField;
 
     public void Init()
     {
@@ -28,6 +29,7 @@ public class Canvas_Settings : MonoBehaviour
 
     public void SaveOptions()
     {
+        PlayerPrefs.SetString("TimePassword", timePasswordField.text);
         PlayerPrefs.SetInt("TotalTimeMinutes", minutesTotal);
         gm.totalTimeInMinutes = minutesTotal;
         Close();
