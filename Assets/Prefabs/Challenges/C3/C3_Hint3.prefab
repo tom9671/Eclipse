@@ -199,9 +199,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: During a full moon, the Aztecs believed the outline of a rabbit can
-        be seen in the dark spots of the moon because a rabbit, thrown in the air,
-        hit the God Tecciztecatl darkening his light.
+      value: During a <u>full moon</u>, the Aztecs believed the outline of a rabbit
+        can be seen in the dark spots of <u>the moon</u> because a rabbit, thrown
+        in the air, hit the God Tecciztecatl darkening his light.
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image

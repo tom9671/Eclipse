@@ -223,11 +223,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: This is the Choctaw myth of solar eclipses.  They attributed the darkening
-        of a solar eclipse to a mischievous black squirrel who would try to eat the
-        sun.  On the other side of the world, the ancient Chinese would also make
-        loud noises to scare off someone eating the sun, banging on pots and drums
-        to frighten away a dragon instead of a squirrel.
+      value: This is the Choctaw myth of <u>solar eclipses</u>.  They attributed
+        the darkening of a <u>solar eclipse</u> to a mischievous black squirrel who
+        would try to eat the sun.  On the other side of the world, the ancient Chinese
+        would also make loud noises to scare off someone eating the sun, banging
+        on pots and drums to frighten away a dragon instead of a squirrel.
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: onEndDialogue.m_PersistentCalls.m_Calls.Array.data[0].m_Target
