@@ -91,6 +91,7 @@ public class DataCollection : MonoBehaviour
         form.AddField("entry.741020485", strDataList[0]);
         form.AddField("entry.1388233873", strDataList[1]);
         form.AddField("entry.2012214965", strDataList[2]);
+        form.AddField("entry.931242414", System.DateTime.Now.ToString());
 
         using (UnityWebRequest www = UnityWebRequest.Post(BASE_URL, form))
         {
