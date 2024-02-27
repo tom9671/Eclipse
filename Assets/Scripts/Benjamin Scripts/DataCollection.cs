@@ -67,7 +67,7 @@ public class DataCollection : MonoBehaviour
                     if (boolHaveInternet == true)
                     {
                         StartCoroutine(Post(strDataList));
-                        for (int i = 0; i < 3; i++)
+                        for (int i = 0; i < 4; i++)
                         {
                             strDataList.RemoveAt(0);
                         }
@@ -91,7 +91,7 @@ public class DataCollection : MonoBehaviour
         form.AddField("entry.741020485", strDataList[0]);
         form.AddField("entry.1388233873", strDataList[1]);
         form.AddField("entry.2012214965", strDataList[2]);
-        form.AddField("entry.931242414", System.DateTime.Now.ToString());
+        form.AddField("entry.931242414", strDataList[3]);
 
         using (UnityWebRequest www = UnityWebRequest.Post(BASE_URL, form))
         {
@@ -138,6 +138,7 @@ public class DataCollection : MonoBehaviour
             writer.WriteLine(strHintsUsed);
             writer.WriteLine(strIncorrect);
             writer.WriteLine(strGetTime);
+            writer.WriteLine(System.DateTime.Now.ToString());
         }
 
          Debug.Log("Done");
