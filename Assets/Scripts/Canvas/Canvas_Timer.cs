@@ -63,18 +63,7 @@ public class Canvas_Timer : MonoBehaviour
 
     void ShowTimeLeft()
     {
-        int minutes = 0;
-        int seconds = timeLeft;
-        while (seconds > 59)
-        {
-            minutes++;
-            seconds -= 60;
-        }
-
-        if (seconds > 9)
-            timerText.text = minutes + ":" + seconds;
-        else
-            timerText.text = minutes + ":0" + seconds;
+        timerText.text = SecToDig(timeLeft);
 
         if(timeLeft <= warningPeriod)
         {
@@ -94,8 +83,13 @@ public class Canvas_Timer : MonoBehaviour
 
     public string GetTotalTime()
     {
+        return SecToDig(timeLimit - timeLeft);
+    }
+
+    public string SecToDig(int _seconds) 
+    {
         int minutes = 0;
-        int seconds = timeLimit - timeLeft;
+        int seconds = _seconds;
         while (seconds > 59)
         {
             minutes++;

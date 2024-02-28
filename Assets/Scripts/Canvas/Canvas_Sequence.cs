@@ -30,6 +30,7 @@ public class Canvas_Sequence : MonoBehaviour
 
     int hintIdx;
     int sequenceIdx;
+    int startTime;
 
     GameObject storyMenu;
 
@@ -39,6 +40,8 @@ public class Canvas_Sequence : MonoBehaviour
     {
         sequenceIdx = _sequenceIdx;
         gm = GameManager.gm;
+
+        startTime = gm.timerReal.GetTimeInSeconds();
 
         for (int i = 0; i < acceptableAnswers.Length; i++)
         {
@@ -171,6 +174,9 @@ public class Canvas_Sequence : MonoBehaviour
     public void Success()
     {
         onSuccessfulAnswer.Invoke();
+
+        int timeTaken = gm.timerReal.GetTimeInSeconds() - startTime;
+        gm.RecordTime(sequenceIdx, timeTaken);
 
         if (final)
             EndGame();

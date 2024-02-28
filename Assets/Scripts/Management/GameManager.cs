@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
     //Variables to track
     int[] numbHintsUsed;
     int[] incorrectAnswers;
+    int[] secondsTaken;
+    string[] timeTaken;
 
     string timePassword;
 
@@ -51,8 +53,10 @@ public class GameManager : MonoBehaviour
 
         numbHintsUsed = new int[sequence.Length];
         incorrectAnswers = new int[sequence.Length];
+        secondsTaken = new int[sequence.Length];
+        timeTaken = new string[sequence.Length];
 
-        if(PlayerPrefs.GetInt("FirstTime") == 0)
+        if (PlayerPrefs.GetInt("FirstTime") == 0)
         {
             PlayerPrefs.SetString("TimePassword", "Education24");
             PlayerPrefs.SetInt("TotalTimeMinutes", 30);
@@ -78,7 +82,7 @@ public class GameManager : MonoBehaviour
 
     public void StartTimer()
     {
-        if(timerReal == null)
+        if (timerReal == null)
         {
             timerReal = Instantiate(timer, Vector3.zero, Quaternion.identity);
             timerReal.Init(totalTimeInMinutes * 60);
@@ -87,7 +91,7 @@ public class GameManager : MonoBehaviour
 
     public void ChangeTime(int _difference)
     {
-        if(timerReal != null)
+        if (timerReal != null)
             timerReal.ChangeTime(_difference);
     }
 
@@ -152,26 +156,33 @@ public class GameManager : MonoBehaviour
         incorrectAnswers[_idx]++;
     }
 
-    public int GetHintsUsed()
+    public void RecordTime(int _idx, int _seconds)
     {
+        secondsTaken[_idx] = _seconds;
+        timeTaken[_idx] = timerReal.SecToDig(_seconds);
+    }
+
+    public int[] GetHintsUsed()
+    {/*
         int hintsUsedTotal = 0;
-        for(int i = 0; i < numbHintsUsed.Length; i++)
+        for (int i = 0; i < numbHintsUsed.Length; i++)
         {
             hintsUsedTotal += numbHintsUsed[i];
         }
-
-        return hintsUsedTotal;
+        */
+        return numbHintsUsed;
     }
 
-    public int GetIncorrectAnswers()
+    public int[] GetIncorrectAnswers()
     {
+        /*
         int incorrectAnswersTotal = 0;
         for (int i = 0; i < incorrectAnswers.Length; i++)
         {
             incorrectAnswersTotal += incorrectAnswers[i];
-        }
+        }*/
 
-        return incorrectAnswersTotal;
+        return incorrectAnswers;
     }
 
     public int GetTimeInSeconds()
@@ -182,6 +193,16 @@ public class GameManager : MonoBehaviour
     public string GetTimeString()
     {
         return timerReal.GetTotalTime();
+    }
+
+    public int[] GetChallengeSeconds()
+    {
+        return secondsTaken;
+    }
+
+    public string[] GetChallengeStrings()
+    {
+        return timeTaken;
     }
 
     void Update()
