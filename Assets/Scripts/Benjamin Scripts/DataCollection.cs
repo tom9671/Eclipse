@@ -28,6 +28,7 @@ public class DataCollection : MonoBehaviour
         }
 
         strData = File.ReadAllLines(Application.persistentDataPath + "DataCollection.txt");
+        Debug.Log(Application.persistentDataPath);
 
         foreach (string data in strData)
         {
@@ -67,7 +68,7 @@ public class DataCollection : MonoBehaviour
                     if (boolHaveInternet == true)
                     {
                         StartCoroutine(Post(strDataList));
-                        for (int i = 0; i < 4; i++)
+                        for (int i = 0; i < 5; i++)
                         {
                             strDataList.RemoveAt(0);
                         }
@@ -92,6 +93,7 @@ public class DataCollection : MonoBehaviour
         form.AddField("entry.1388233873", strDataList[1]);
         form.AddField("entry.2012214965", strDataList[2]);
         form.AddField("entry.931242414", strDataList[3]);
+        form.AddField("entry.1318815076", strDataList[4]);
 
         using (UnityWebRequest www = UnityWebRequest.Post(BASE_URL, form))
         {
@@ -124,21 +126,66 @@ public class DataCollection : MonoBehaviour
 
         using (StreamWriter writer = new StreamWriter(Application.persistentDataPath + "DataCollection.txt", append: true))
         {
-            int strHintsUsed, strIncorrect, strGetTime;
+            int intGetTime;
+            int[] intHintsUsed, intIncorrect;
+            string[] strEachChallengeTime;
+            bool boolIsFirstHint = false, boolIsFirstIncorrect = false;
 
             if (strDataList.Count > 0)
             {
                 //writer.WriteLine("");
             }
 
-            strHintsUsed = gameObject.GetComponent<GameManager>().GetHintsUsed();
-            strIncorrect = gameObject.GetComponent<GameManager>().GetIncorrectAnswers();
-            strGetTime = gameObject.GetComponent<GameManager>().GetTimeInSeconds();
+            intHintsUsed = gameObject.GetComponent<GameManager>().GetHintsUsed();
+            intIncorrect = gameObject.GetComponent<GameManager>().GetIncorrectAnswers();
+            intGetTime = gameObject.GetComponent<GameManager>().GetTimeInSeconds();
+            strEachChallengeTime = gameObject.GetComponent<GameManager>().GetChallengeStrings();
 
-            writer.WriteLine(strHintsUsed);
-            writer.WriteLine(strIncorrect);
-            writer.WriteLine(strGetTime);
+            //writer.WriteLine(intHintsUsed);
+            //writer.WriteLine(intIncorrect);
+
+            foreach (int item in intHintsUsed)
+            {
+                if (boolIsFirstHint)
+                {
+                    writer.Write(item + " , ");
+                }
+                else
+                {
+                    boolIsFirstHint = true;
+                }              
+            }
+
+            writer.Write("\n");
+
+            foreach (int item in intIncorrect)
+            {
+                if (boolIsFirstIncorrect)
+                {
+                    writer.Write(item + " , ");
+                }
+                else
+                {
+                    boolIsFirstIncorrect = true;
+                }               
+            }
+
+            writer.Write("\n");
+
+            writer.WriteLine(intGetTime);
             writer.WriteLine(System.DateTime.Now.ToString());
+
+            foreach (string item in strEachChallengeTime)
+            {
+                if (boolIsFirstIncorrect)
+                {
+                    writer.Write(item + " , ");
+                }
+                else
+                {
+                    boolIsFirstIncorrect = true;
+                }
+            }
         }
 
          Debug.Log("Done");
