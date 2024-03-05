@@ -17,9 +17,9 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 63a44334c13cf6b40aea2d70b63320c8, type: 3}
     - target: {fileID: 1060920357884987792, guid: dbb60dbc8fe20194e925355f8daf05cf, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: Another one of your monuments was built during the 12th century by the
-        king of the Khmer Empire in Southeast Asia. This temple is called the Temple
-        of Angkor Wat.
+      value: "Otro de los monumentos fue construido en el siglo XII por el rey del
+        Imperio Jemer en el Sudeste Asi\xE1tico. Este templo se llama <u>templo de
+        angkor wat</u>."
       objectReference: {fileID: 0}
     - target: {fileID: 1060920357884987792, guid: dbb60dbc8fe20194e925355f8daf05cf, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image

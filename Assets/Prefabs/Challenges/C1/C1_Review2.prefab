@@ -249,9 +249,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: Once you find the correct location to place your Moon, look at the numbers
-        on the table edge. These numbers represent the distance the Earth is from
-        the Moon during the April solar eclipse.
+      value: "Una vez que encuentren el lugar correcto para colocar la Luna, f\xEDjense
+        en los n\xFAmeros del borde de la mesa. Estos n\xFAmeros representan la distancia
+        a la que se encuentra la Tierra respecto de la Luna durante el eclipse solar
+        de abril. "
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image

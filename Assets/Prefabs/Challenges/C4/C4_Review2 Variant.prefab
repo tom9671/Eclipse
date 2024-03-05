@@ -101,10 +101,10 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 222a4a3d838c9854a89790a99f220314, type: 3}
     - target: {fileID: 619892094756419421, guid: f7b8ae631f78cf546973560059705db1, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: How do astronomers and astrophysicists map when and where they occur?
-        With the help of computers, scientists can input the positions and speeds
-        of Earth and the moon into mathematical calculations to create eclipse forecast
-        maps.
+      value: "\xBFc\xF3mo hacen los astr\xF3nomos y astrof\xEDsicos para determinar
+        cu\xE1ndo y d\xF3nde se producen? Con la ayuda de computadoras, los cient\xEDficos
+        pueden ingresar la posici\xF3n y velocidad de la Tierra y la Luna en c\xE1lculos
+        matem\xE1ticos para crear mapas de previsi\xF3n de eclipses."
       objectReference: {fileID: 0}
     - target: {fileID: 619892094756419421, guid: f7b8ae631f78cf546973560059705db1, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image

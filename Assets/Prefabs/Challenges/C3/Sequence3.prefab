@@ -289,11 +289,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6550205812926760475, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -60
+      value: -71
       objectReference: {fileID: 0}
     - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_text
-      value: What is the code from the Light Puzzle?
+      value: "\xBFCu\xE1l es el c\xF3digo del rompecabezas de luz?"
       objectReference: {fileID: 0}
     - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_fontAsset
@@ -445,7 +445,8 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: c7936939bbb5e7a448160df543e9032f, type: 3}
     - target: {fileID: 8355609550493373046, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_text
-      value: If you need to review any of the stories, just tap on the Images above
+      value: "Si necesita revisar alguna informaci\xF3n, simplemente toque las im\xE1genes
+        de arriba"
       objectReference: {fileID: 0}
     - target: {fileID: 8355609550493373046, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_margin.z

@@ -101,9 +101,9 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 12d738d8b7e32f24aa5bb1fd181f6be1, type: 3}
     - target: {fileID: 619892094756419421, guid: f7b8ae631f78cf546973560059705db1, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: "The Moon\u2019s orbit is \"tilted\" relative to the Sun and Earth,
-        and because of this tilt, it isn\u2019t possible for the Sun, Moon and Earth
-        to align perfectly every month."
+      value: "La \xF3rbita de la Luna est\xE1 \"inclinada\" con respecto al Sol y
+        la  Tierra, y debido a esta inclinaci\xF3n, no es posible que el Sol, la
+        Luna y la Tierra se alineen perfectamente todos los meses."
       objectReference: {fileID: 0}
     - target: {fileID: 619892094756419421, guid: f7b8ae631f78cf546973560059705db1, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image

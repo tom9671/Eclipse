@@ -13,11 +13,11 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: e84e00008aad1d448ba0e6abffc19983, type: 3}
     - target: {fileID: 1060920357884987792, guid: dbb60dbc8fe20194e925355f8daf05cf, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: One of these monuments is a replica of The Temple of the Sun in Machu
-        Picchu, Peru. This ancient temple, built by the Incas, has a curved wall
-        that is perfectly aligned to match the movements of the Sun during solstices
-        and equinoxes.  An equinox occurs when the day and the night are almost exactly
-        the same length.
+      value: "Uno de estos monumentos es una r\xE9plica del <u>templo del sol en
+        Machu Picchu (Peru)</u>. Este antiguo templo construido por los incas tiene
+        una pared curva que est\xE1 perfectamente alineada con los movimientos del
+        Sol durante los <u>solsticios y equinoccios</u>. Un equinoccio se produce
+        cuando el d\xEDa y la noche tienen casi exactamente la misma duraci\xF3n."
       objectReference: {fileID: 0}
     - target: {fileID: 1060920357884987792, guid: dbb60dbc8fe20194e925355f8daf05cf, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image

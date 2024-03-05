@@ -410,22 +410,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue.Array.data[0].dialogue
-      value: "En la caja, encontrar\xE1n piezas de otros monumentos antiguos que
-        tienen importancia astron\xF3mica."
-      objectReference: {fileID: 0}
-    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
-      propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[0].dialogue
       value: "Uno de estos monumentos es una r\xE9plica del <u>templo del sol en
-        Machu Picchu (Per</u>. Este antiguo templo construido por los incas tiene
+        Machu Picchu (Peru)</u>. Este antiguo templo construido por los incas tiene
         una pared curva que est\xE1 perfectamente alineada con los movimientos del
         Sol durante los <u>solsticios y equinoccios</u>. Un equinoccio se produce
         cuando el d\xEDa y la noche tienen casi exactamente la misma duraci\xF3n."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
-      propertyPath: dialogueSequence.Array.data[3].dialogue.Array.data[0].dialogue
+      propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[0].dialogue
       value: "Otro de los monumentos fue construido en el siglo XII por el rey del
         Imperio Jemer en el Sudeste Asi\xE1tico. Este templo se llama <u>templo de
         angkor wat</u>."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[3].dialogue.Array.data[0].dialogue
+      value: "Los antiguos egipcios tambi\xE9n se interesaban por la astronom\xEDa.
+        Muchas pir\xE1mides y monumentos del Antiguo Egipto estaban alineados con
+        los puntos cardinales de la br\xFAjula.  El tercer monumento es una r\xE9plica
+        del Templo de <u>abu simbel en egipto</u>."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[4].dialogue.Array.data[0].dialogue

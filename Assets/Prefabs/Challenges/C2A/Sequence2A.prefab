@@ -65,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3713939084897976312, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_text
-      value: Only enter the 3-digit number, no commas or spaces
+      value: "Solo ingrese el n\xFAmero de 3 d\xEDgitos, sin comas ni espacios"
       objectReference: {fileID: 0}
     - target: {fileID: 3713939084897976312, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_margin.z
@@ -403,6 +403,11 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a9420c89d15b41c48bf6ba75fa0ed1f6, type: 3}
+    - target: {fileID: 8355609550493373046, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_text
+      value: "Si necesita revisar alguna informaci\xF3n, simplemente toque las im\xE1genes
+        de arriba"
+      objectReference: {fileID: 0}
     - target: {fileID: 8355609550493373046, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_fontAsset
       value: 

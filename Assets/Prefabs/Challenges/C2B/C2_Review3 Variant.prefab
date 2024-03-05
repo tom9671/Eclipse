@@ -17,10 +17,10 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 5b117746f3cc7d044823ed10fe268b0a, type: 3}
     - target: {fileID: 1060920357884987792, guid: dbb60dbc8fe20194e925355f8daf05cf, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: The Ancient Egyptians also had an interest in astronomy. Many Ancient
-        Egyptian pyramids and monuments were aligned with the cardinal points of
-        the compass.  Your 3rd monument is a replica of The Temple of Abu Simbel
-        in Egypt.
+      value: "Los antiguos egipcios tambi\xE9n se interesaban por la astronom\xEDa.
+        Muchas pir\xE1mides y monumentos del Antiguo Egipto estaban alineados con
+        los puntos cardinales de la br\xFAjula.  El tercer monumento es una r\xE9plica
+        del Templo de <u>abu simbel en egipto</u>."
       objectReference: {fileID: 0}
     - target: {fileID: 1060920357884987792, guid: dbb60dbc8fe20194e925355f8daf05cf, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image

@@ -243,10 +243,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: For the first challenge we need to understand what shadows are and how
-        the Sun, Moon, and Earth align to create shadows and eclipses.  During a
-        solar eclipse, the Moon, the Earth, and the Sun are all in alignment.  The
-        Moon blocks the light from the Sun and creates a large shadow on Earth.
+      value: "Para el primer desaf\xEDo, necesitamos entender qu\xE9 son las sombras
+        y c\xF3mo <u>el sol, la luna y la tierrai</u>  se alinean y crean sombras
+        y eclipses."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image

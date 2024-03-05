@@ -56,6 +56,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3713939084897976312, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_text
+      value: "Ingrese solo el n\xFAmero de 6 d\xEDgitos, sin comas ni espacios"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713939084897976312, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_margin.z
       value: -37.232788
       objectReference: {fileID: 0}
@@ -468,6 +472,11 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a8c7c93f0742e8e48b578042c59094e5, type: 3}
+    - target: {fileID: 8355609550493373046, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
+      propertyPath: m_text
+      value: "Si necesita revisar alguna informaci\xF3n, simplemente toque las im\xE1genes
+        de arriba"
+      objectReference: {fileID: 0}
     - target: {fileID: 8355609550493373046, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_fontSize
       value: 8

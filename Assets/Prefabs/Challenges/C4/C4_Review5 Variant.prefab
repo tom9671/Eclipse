@@ -101,8 +101,8 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: acfe1022f5d78db4a8b4521af90b001b, type: 3}
     - target: {fileID: 619892094756419421, guid: f7b8ae631f78cf546973560059705db1, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: Your job is to stack the transparencies so you can complete the digital
-        message in the boxes.
+      value: Su trabajo consiste en apilar las hojas transparentes para poder completar
+        el mensaje digital en los recuadros.
       objectReference: {fileID: 0}
     - target: {fileID: 619892094756419421, guid: f7b8ae631f78cf546973560059705db1, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image

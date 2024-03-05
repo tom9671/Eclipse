@@ -17,9 +17,9 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 34cec3e9dfba49947940479430b39a4c, type: 3}
     - target: {fileID: 1060920357884987792, guid: dbb60dbc8fe20194e925355f8daf05cf, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: For the first part of the challenge you must angle your flashlight so
-        the beam of light shines through the Heelstones between the middle pillars
-        of the stone circle.
+      value: "Para la primera parte del desaf\xEDo, deben inclinar la linterna de
+        modo que el haz de luz brille a trav\xE9s de las Heel Stones entre los pilares
+        centrales del c\xEDrculo de piedra."
       objectReference: {fileID: 0}
     - target: {fileID: 1060920357884987792, guid: dbb60dbc8fe20194e925355f8daf05cf, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image

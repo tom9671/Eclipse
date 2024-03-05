@@ -241,9 +241,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: "Only people that live in the path of the Moon\u2019s shadow and are
-        on the sunny side of the Earth will be able to see the eclipse. We call the
-        path of the Moon\u2019s shadow the \u2018path of totality\u2019."
+      value: "\xDAnicamente las personas que vivan en la trayectoria de la sombra
+        de la Luna y se encuentren en la cara de la Tierra iluminada por el Sol podr\xE1n
+        ver el eclipse. Llamamos \"<u> trayectoria de la totalidad</u>\"  al camino
+        que recorre la sombra de la Luna."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image
