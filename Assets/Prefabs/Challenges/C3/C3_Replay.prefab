@@ -25,7 +25,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1083710202397392237, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_text
-      value: Challenge 3
+      value: Desafiar 3
       objectReference: {fileID: 0}
     - target: {fileID: 1633369386193466479, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -159,10 +159,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].subtitle
-      value: Each book represents one of the stories you just heard.  Your job is
-        to place the books in the proper slots by matching the picture to the story. 
-        Once you place your books correctly your lamp will light up. Click on next
-        when your books are aligned and your light is shining.
+      value: "Cada libro representa una de las historias que acaban de escuchar. 
+        Su trabajo consiste en colocar los libros en los espacios correctos haciendo
+        coincidir la imagen con la historia.  Una vez que coloquen los libros correctamente,
+        se encender\xE1 la l\xE1mpara."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].dialogue
@@ -292,8 +292,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: "If you are ready for this challenge, click NEXT.\_ You can go back
-        and rewatch each of the stories again."
+      value: "Si est\xE1n listos para este desaf\xEDo, hagan clic en el bot\xF3n
+        BEGIN CHALLENGE. "
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue.Array.data[0].dialogue
@@ -301,9 +301,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[0].dialogue
-      value: Did you notice your light is an ultraviolet light?   Shine your light
-        on the side wall, you will see a 4 digit code. Input the code into your tablet
-        to move to challenge #4.
+      value: "\xBFNotaron que la luz que tienen ah\xED es ultravioleta? Hagan brillar
+        la luz sobre la pared del costado y ver\xE1n un c\xF3digo de 4 d\xEDgitos.
+        Escriban el c\xF3digo en su tableta para pasar al desaf\xEDo n\xFAmero 4. "
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image
@@ -317,6 +317,10 @@ PrefabInstance:
       propertyPath: dialogueSequence.Array.data[2].displayImage.Array.data[0].image
       value: 
       objectReference: {fileID: 21300000, guid: fabcfccd190cd4541a3e0acdf8afbe4c, type: 3}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].justifyText
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].yOffset
       value: -75

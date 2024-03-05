@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1083710202397392237, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_text
-      value: 'Challenge 3
+      value: 'Desafiar 3
 
 '
       objectReference: {fileID: 0}
@@ -212,14 +212,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: Did you know that Ancient civilizations all over the world have also
-        created stories that explain the mysteries of the daytime and nighttime sky.
+      value: "\xBFSab\xEDan que las antiguas civilizaciones de todo el mundo tambi\xE9n
+        han creado historias que explican los misterios del cielo diurno y nocturno? 
+        Hagan clic en cada imagen para escuchar una historia."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue.Array.data[0].dialogue
-      value: Each book represents one of the stories you are about to hear.  Your
-        job is to place the books in the proper slots by matching the picture to
-        the story.  Once you place your books correctly your lamp will light up.
+      value: "Cada libro representa una de las historias que acaban de escuchar. 
+        Su trabajo consiste en colocar los libros en los espacios correctos haciendo
+        coincidir la imagen con la historia.  Una vez que coloquen los libros correctamente,
+        se encender\xE1 la l\xE1mpara."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue.Array.data[0].offset.y

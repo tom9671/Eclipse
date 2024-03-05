@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1083710202397392237, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_text
-      value: Hint 3
+      value: Indirecta 3
       objectReference: {fileID: 0}
     - target: {fileID: 2442756938190909031, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -199,9 +199,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: During a <u>full moon</u>, the Aztecs believed the outline of a rabbit
-        can be seen in the dark spots of <u>the moon</u> because a rabbit, thrown
-        in the air, hit the God Tecciztecatl darkening his light.
+      value: "Durante <u>la luna llena</u>, los aztecas cre\xEDan que se pod\xEDa
+        ver la silueta de un conejo en las manchas oscuras de <u>la Luna</u> porque
+        un conejo que hab\xEDa sido lanzado al aire golpe\xF3 al dios Tecciztecatl
+        y oscureci\xF3 su luz."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image

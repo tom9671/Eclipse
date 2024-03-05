@@ -250,11 +250,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: Your challenge is to align the moon so the shadow it casts falls completely
-        within the path of totality running through Central Texas. You can move the
-        Moon right and left, up and down and back and forth in order to find the
-        right location. The edges of the Moon need to fit entirely within the path
-        of totality.
+      value: "El desaf\xEDo consiste en alinear la luna de modo que la sombra que
+        proyecte caiga completamente dentro de la trayectoria de la totalidad que
+        atraviesa el centro de Texas."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image

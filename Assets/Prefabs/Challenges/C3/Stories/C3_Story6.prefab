@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1083710202397392237, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_text
-      value: Batammaliba Lunar Eclipse
+      value: Batammaliba Eclipse Lunar
       objectReference: {fileID: 0}
     - target: {fileID: 1083710202397392237, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_VerticalAlignment
@@ -189,10 +189,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: This is the legend of the Batammaliba people from Togo and Benin, in
-        Africa. They believed that a <u>lunar eclipse</u> is a conflict between the
-        Sun and the Moon.  This became a time for old feuds to be forgiven, when
-        the Batammaliba come together as a community to end their own conflicts.
+      value: "Durante un <u>eclipse lunar</u>, la Tierra se interpone entre el Sol
+        y la Luna y proyecta una sombra que oscurece la luna llena. Esta es la leyenda
+        del pueblo batammariba de Togo y Ben\xEDn, en \xC1frica. Cre\xEDan que un
+        eclipse lunar era un conflicto entre el Sol y la Luna. "
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: onEndDialogue.m_PersistentCalls.m_Calls.Array.data[0].m_Target

@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1083710202397392237, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_text
-      value: Check it out on the map!
+      value: "\xA1Compru\xE9balo en el mapa!"
       objectReference: {fileID: 0}
     - target: {fileID: 1633369386193466479, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -193,11 +193,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: "Uvalde, Texas is going to be the best place near Central Texas to view
-        the eclipse! Why? Because Uvalde is closer to the longest duration of totality
-        for the April 2024 eclipse.   anywhere along the path of totality will be
-        a great place to view this historical event. We are very excited \u2013the
-        April 2024 total eclipse will make history!"
+      value: "Como pueden ver, Uvalde, Texas, ser\xE1 el mejor lugar cerca del centro
+        de Texas para ver el eclipse. \xBFPor qu\xE9? Porque Uvalde es el lugar m\xE1s
+        cercano donde se producir\xE1 la mayor duraci\xF3n de la totalidad del eclipse
+        de abril de 2024."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image

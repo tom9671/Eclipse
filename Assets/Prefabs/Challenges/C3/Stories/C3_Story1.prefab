@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1083710202397392237, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_text
-      value: Black Squirrel and Dragon
+      value: "Ardilla negra y \ndrag\xF3n"
       objectReference: {fileID: 0}
     - target: {fileID: 1083710202397392237, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_VerticalAlignment
@@ -223,11 +223,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: This is the Choctaw myth of <u>solar eclipses</u>.  They attributed
-        the darkening of a <u>solar eclipse</u> to a mischievous black squirrel who
-        would try to eat the sun.  On the other side of the world, the ancient Chinese
-        would also make loud noises to scare off someone eating the sun, banging
-        on pots and drums to frighten away a dragon instead of a squirrel.
+      value: "Este es el mito choctaw de los <u>eclipses solares</u>.  Atribu\xEDan
+        el oscurecimiento provocado por <u>el eclipse solar</u> a una traviesa ardilla
+        negra que intentaba comerse el sol.  Al otro lado del mundo, los antiguos
+        chinos tambi\xE9n hac\xEDan ruidos fuertes para ahuyentar a alguien que se
+        com\xEDa el sol, golpeaban ollas y tambores para espantar a un drag\xF3n
+        en vez de a una ardilla."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: onEndDialogue.m_PersistentCalls.m_Calls.Array.data[0].m_Target

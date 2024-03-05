@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1083710202397392237, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_text
-      value: Challenge 1
+      value: Desafiar 1
       objectReference: {fileID: 0}
     - target: {fileID: 1083710202397392237, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_margin.z
@@ -199,8 +199,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].subtitle
-      value: During a solar eclipse, the Moon, the Earth, and the Sun are all in
-        alignment.
+      value: "Durante un eclipse solar, la Luna, la Tierra y el Sol est\xE1n <u>alineados</u>."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue
@@ -443,8 +442,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: For the first challenge we need to understand what shadows are and how
-        the Sun, Moon, and Earth align to create shadows and eclipses.
+      value: "Para el primer desaf\xEDo, necesitamos entender qu\xE9 son las sombras
+        y c\xF3mo <u>el sol, la luna y la tierrai</u>  se alinean y crean sombras
+        y eclipses."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].offset.x
@@ -456,8 +456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[1].dialogue
-      value: The Moon blocks the light from the Sun and creates a large shadow on
-        Earth
+      value: La Luna bloquea la luz del Sol y crea una gran sombra sobre la Tierra.
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[1].offset.x
@@ -474,27 +473,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue.Array.data[1].dialogue
-      value: "Only people that live in the path of the Moon\u2019s shadow and are
-        on the sunny side of the Earth will be able to see the eclipse. We call the
-        path of the Moon\u2019s shadow the \u2018path of totality\u2019."
+      value: "\xDAnicamente las personas que vivan en la trayectoria de la sombra
+        de la Luna y se encuentren en la cara de la Tierra iluminada por el Sol podr\xE1n
+        ver el eclipse. Llamamos \"<u> trayectoria de la totalidad</u>\"  al camino
+        que recorre la sombra de la Luna."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[0].dialogue
-      value: Your challenge is to align the moon so the shadow it casts falls completely
-        within the path of totality running through Central Texas. You can move the
-        Moon right and left, up and down and back and forth in order to find the
-        right location. The edges of the Moon need to fit entirely within the path
-        of totality.
+      value: "El desaf\xEDo consiste en alinear la luna de modo que la sombra que
+        proyecte caiga completamente dentro de la trayectoria de la totalidad que
+        atraviesa el centro de Texas. Pueden mover la luna hacia la derecha e izquierda,
+        hacia arriba y abajo, y hacia adelante y atr\xE1s para encontrar la ubicaci\xF3n
+        correcta. Los bordes de la Luna tienen que encajar por completo dentro de
+        la trayectoria de la totalidad."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[0].offset.x
       value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[0].offset.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[1].dialogue
-      value: Once you find the correct location to place your Moon, look at the numbers
-        on the table edge. These numbers represent the distance the Earth is from
-        the Moon during the April solar eclipse.
+      value: "Una vez que encuentren el lugar correcto para colocar la Luna, f\xEDjense
+        en los n\xFAmeros del borde de la mesa. Estos n\xFAmeros representan la distancia
+        a la que se encuentra la Tierra respecto de la Luna durante el eclipse solar
+        de abril. "
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[1].offset.x

@@ -1280,7 +1280,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Select a story! Read them all to continue
+  m_text: "\u201CMen\xFA de cuentos de cuentos celestiales\u201D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: df8bd2afb0f27574dabd61746056a988, type: 2}
   m_sharedMaterial: {fileID: 5813670448785305982, guid: df8bd2afb0f27574dabd61746056a988, type: 2}

@@ -173,7 +173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5891389121402752115, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_text
-      value: What's Your Team Name?
+      value: "\xBFCu\xE1l es el nombre de tu equipo?"
       objectReference: {fileID: 0}
     - target: {fileID: 5891389121402752115, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_fontAsset
@@ -217,7 +217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_text
-      value: It can be silly or serious, but give it some personality!
+      value: "Puede ser tonto o serio, \xA1pero dale un poco de personalidad!"
       objectReference: {fileID: 0}
     - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_margin.z

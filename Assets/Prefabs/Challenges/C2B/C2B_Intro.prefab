@@ -9,11 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1083710202397392237, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_text
-      value: 'Challenge 2
-
-        Part 2
-
-'
+      value: "Desaf\xEDo 2\nParte 2\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1083710202397392237, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_fontSize
@@ -407,36 +403,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: Use your code to open the lock box.  In the box you will find pieces
-        of other ancient monuments that have astronomical significance.
+      value: " \xA1Genial! Ya abrieron la caja de seguridad. En la caja, encontrar\xE1n
+        piezas de otros monumentos antiguos que tienen importancia astron\xF3mica.
+        Tendr\xE1n que aprender un poco sobre cada uno de estos monumentos para poder
+        completar con \xE9xito la segunda parte de este desaf\xEDo."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue.Array.data[0].dialogue
-      value: One of these monuments is a replica of The Temple of the Sun in Machu
-        Picchu, Peru. This ancient temple, built by the Incas, has a curved wall
-        that is perfectly aligned to match the movements of the Sun during solstices
-        and equinoxes.  An equinox occurs when the day and the night are almost exactly
-        the same length.
+      value: "En la caja, encontrar\xE1n piezas de otros monumentos antiguos que
+        tienen importancia astron\xF3mica."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[0].dialogue
-      value: Another one of your monuments was built during the 12th century by the
-        king of the Khmer Empire in Southeast Asia. This temple is called the Temple
-        of Angkor Wat.
+      value: "Uno de estos monumentos es una r\xE9plica del <u>templo del sol en
+        Machu Picchu (Per</u>. Este antiguo templo construido por los incas tiene
+        una pared curva que est\xE1 perfectamente alineada con los movimientos del
+        Sol durante los <u>solsticios y equinoccios</u>. Un equinoccio se produce
+        cuando el d\xEDa y la noche tienen casi exactamente la misma duraci\xF3n."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[3].dialogue.Array.data[0].dialogue
-      value: The Ancient Egyptians also had an interest in astronomy. Many Ancient
-        Egyptian pyramids and monuments were aligned with the cardinal points of
-        the compass.  Your 3rd monument is a replica of The Temple of Abu Simbel
-        in Egypt.
+      value: "Otro de los monumentos fue construido en el siglo XII por el rey del
+        Imperio Jemer en el Sudeste Asi\xE1tico. Este templo se llama <u>templo de
+        angkor wat</u>."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[4].dialogue.Array.data[0].dialogue
-      value: Your job for the second part of this challenge is to place the monuments
-        in the correct geographical location on the world map from left to right.
-        When you think you have the monuments in the correct place click NEXT. Put
-        these numbers in your tablet in the correct order from left to right.
+      value: "Cuando crean que han colocado los monumentos en el lugar correcto,
+        hagan clic en NEXT.  Coloquen estos n\xFAmeros en su tableta en el orden
+        correcto de izquierda a derecha."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image

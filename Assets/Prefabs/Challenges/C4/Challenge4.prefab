@@ -547,7 +547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5891389121402752115, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_text
-      value: Let's Figure it        out!
+      value: "\xA1Vamos a  averiguarlo!"
       objectReference: {fileID: 0}
     - target: {fileID: 5891389121402752115, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_fontSize
@@ -595,7 +595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_text
-      value: What are the coordinates to view the eclipse?
+      value: "\xBFCu\xE1les son las coordenadas para ver el eclipse? "
       objectReference: {fileID: 0}
     - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_fontSize
@@ -635,7 +635,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6882415516477617821, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_text
-      value: Enter Coordinates...
+      value: "Coordenadas aqu\xED"
       objectReference: {fileID: 0}
     - target: {fileID: 6882415516477617821, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_fontSize
@@ -755,7 +755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7912538843498801795, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_text
-      value: Enter Coordinates...
+      value: "Coordenadas aqu\xED"
       objectReference: {fileID: 0}
     - target: {fileID: 7912538843498801795, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_fontSize

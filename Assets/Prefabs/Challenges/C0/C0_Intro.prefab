@@ -360,15 +360,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: Hello, my name is Dr. Chris Packham and I am an astrophysics professor
-        at the University of Texas, San Antonio. My field of research is black holes,
-        and I have regularly used some of the largest telescopes on Earth.
+      value: "Hola, soy el Dr. Chris Packham y soy profesor de astrof\xEDsica en
+        el Departamento de F\xEDsica y Astronom\xEDa de la Universidad de Texas en
+        San Antonio."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue.Array.data[0].dialogue
-      value: Hello, my name is Dr. Lia Medeiros and I am an Astrophysicist at Princeton
-        University. My field of research is using equations to create crisper images
-        of black holes.
+      value: "Hola, soy la Dra. L\xEDa Medeiros, soy astrof\xEDsica y trabajo en
+        el Instituto de Estudios Avanzados de la Universidad de Princeton."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].displayImage.Array.data[0].image

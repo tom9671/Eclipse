@@ -29,7 +29,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1083710202397392237, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_text
-      value: Challenge 4
+      value: "Desaf\xEDo 4"
       objectReference: {fileID: 0}
     - target: {fileID: 1083710202397392237, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_margin.z
@@ -50,6 +50,10 @@ PrefabInstance:
     - target: {fileID: 1633369386193466479, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -53
+      objectReference: {fileID: 0}
+    - target: {fileID: 3426232859316510814, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -261
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033699, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_Pivot.x
@@ -193,10 +197,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].subtitle
-      value: How do astronomers and astrophysicists map when and where they occur?
-        With the help of computers, scientists can input the positions and speeds
-        of Earth and the moon into mathematical calculations to create eclipse forecast
-        maps.
+      value: "\xBFc\xF3mo hacen los astr\xF3nomos y astrof\xEDsicos para determinar
+        cu\xE1ndo y d\xF3nde se producen? Con la ayuda de computadoras, los cient\xEDficos
+        pueden ingresar la posici\xF3n y velocidad de la Tierra y la Luna en c\xE1lculos
+        matem\xE1ticos para crear mapas de previsi\xF3n de eclipses."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[3].dialogue
@@ -338,14 +342,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: Why did ancient people and astronomers find eclipses interesting enough
-        to tell stories about them?
+      value: "\xBFPor qu\xE9 a los antiguos pueblos y astr\xF3nomos les parec\xEDan
+        tan interesantes los eclipses como para contar historias sobre ellos? \xBFEran
+        habituales?"
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue.Array.data[0].dialogue
-      value: Have you ever seen an eclipse? Why don't eclipses happen with periodic
-        regularity like the lunar cycle, where you can see a "new moon" once every
-        month?
+      value: "\xBFPor qu\xE9 no se producen eclipses con la periodicidad del ciclo
+        lunar, en el que se puede ver una \"luna nueva\" una vez al mes?  "
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[1].dialogue.Array.data[0].offset.x
@@ -357,9 +361,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[1].dialogue
-      value: "The Moon\u2019s orbit is \"tilted\" relative to the Sun and Earth,
-        and because of this tilt, it isn\u2019t possible for the Sun, Moon and Earth
-        to align perfectly every month."
+      value: "Esto se debe a que la \xF3rbita de la Luna est\xE1 \"inclinada\" con
+        respecto al Sol y la  Tierra, y debido a esta inclinaci\xF3n, no es posible
+        que el Sol, la Luna y la Tierra se alineen perfectamente todos los meses. "
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[2].dialogue.Array.data[1].offset.x
@@ -367,9 +371,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[3].dialogue.Array.data[0].dialogue
-      value: Pieces of each color-coded eclipse path can be found on the       transparency
-        sheets, but notice that pieces of the same colored path can be found on multiple
-        sheets.
+      value: 'En las hojas transparentes pueden encontrar fragmentos de cada trayectoria
+        de los eclipses codificada por colores, pero tengan en cuenta que pueden
+        aparecer fragmentos de una trayectoria de un mismo color en varias hojas. '
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[3].dialogue.Array.data[0].offset.x
@@ -381,8 +385,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[3].dialogue.Array.data[1].dialogue
-      value: These dots and dashes are often       used in digital displays of             
-        words and numbers
+      value: "Estos puntos y rayas se suelen usar para mostrar palabras y n\xFAmeros
+        en formato digital. "
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[3].dialogue.Array.data[1].offset.x
@@ -390,8 +394,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[4].dialogue.Array.data[0].dialogue
-      value: Your job is to stack the transparencies so you can complete the digital
-        message in the boxes.
+      value: Su trabajo consiste en apilar las hojas transparentes para poder completar
+        el mensaje digital en los recuadros.
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[4].dialogue.Array.data[1].dialogue
@@ -560,7 +564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7483753743294261379, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 250
+      value: 278
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}

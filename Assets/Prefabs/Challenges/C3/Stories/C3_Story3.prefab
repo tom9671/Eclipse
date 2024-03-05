@@ -213,11 +213,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: dialogueSequence.Array.data[0].dialogue.Array.data[0].dialogue
-      value: This is the Aztec story of Metztli from what is now northern Mexico. 
-        Burning too brightly and fearing the Earth would be too hot, one of the other
-        gods threw a rabbit up into the sky, hitting Tecciztecatl and darkening his
-        light.  During a full moon, the outline of a rabbit can be seen in the dark
-        spots of <u>the moon</u>.
+      value: "Esta es la historia azteca de Metztli, procedente de lo que hoy es
+        el norte de M\xE9xico. Como ard\xEDa demasiado y se tem\xEDa que la Tierra
+        se calentara mucho, uno de los otros dioses lanz\xF3 un conejo al cielo que
+        golpe\xF3 a Tecciztecatl y aplac\xF3 su luz.  Esto lo convirti\xF3 en la
+        Luna.  Durante LA LUNA llena, se puede ver la silueta de un conejo en las
+        manchas oscuras de la Luna."
       objectReference: {fileID: 0}
     - target: {fileID: 5702960579134033703, guid: b89d0ab18f159c94a8b0e9eab172656d, type: 3}
       propertyPath: onEndDialogue.m_PersistentCalls.m_Calls.Array.data[0].m_Target

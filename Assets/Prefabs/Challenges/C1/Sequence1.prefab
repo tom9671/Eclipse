@@ -221,7 +221,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 80be1859aa9379a46af5d3c42d9fb45a, type: 3}
     - target: {fileID: 5891389121402752115, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_text
-      value: Let's Figure it         out!
+      value: "\xA1Vamos a  averiguarlo!"
       objectReference: {fileID: 0}
     - target: {fileID: 5891389121402752115, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_fontSize
@@ -273,8 +273,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_text
-      value: What is the distance (in miles) the Earth is from the Moon during the
-        April solar eclipse?
+      value: "\xBFCu\xE1l es la distancia entre la Tierra y la Luna durante el eclipse
+        solar del 8 de abril?"
       objectReference: {fileID: 0}
     - target: {fileID: 6728794589178133678, guid: 2148795b0e87b7240a0b23a5b919c8b5, type: 3}
       propertyPath: m_fontSize
