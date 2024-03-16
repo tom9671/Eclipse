@@ -186,6 +186,9 @@ public class DataCollection : MonoBehaviour
                     boolIsFirstIncorrect = true;
                 }
             }
+
+            writer.Write("\n");
+
         }
 
          Debug.Log("Done");
