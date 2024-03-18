@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 0
     16:9: 0
     Others: 0
-  bundleVersion: 1.0
+  bundleVersion: 1.1
   preloadedAssets:
   - {fileID: 0}
   - {fileID: 0}
@@ -172,6 +172,10 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: -1975867976343044608, guid: 1a69ef044016e4b449207b561404e809, type: 2}
+  - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -191,7 +195,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.GameWorlds.Eclipse
+    Android: com.GameWorlds.EclipseEsp
     Standalone: com.DefaultCompany.2DProject
     iPhone: com.GameWorlds.Eclipse
   buildNumber:
